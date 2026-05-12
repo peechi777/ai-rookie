@@ -1,0 +1,802 @@
+[
+  {
+    "intent": "track_refund",
+    "question": "I am waiting for a compensation of {{Currency Symbol}}{{Refund Amount}}, was it processed",
+    "reference": "I understand your anticipation in receiving the ${{Refund Amount}} compensation and your desire to know if it has been processed. Allow me to check the status of your compensation and provide you with an update. Please bear with me for a moment while I gather the necessary information.",
+    "prediction": "We completely understand your anticipation and eagerness to receive the compensation of ${{Refund Amount}}. Allow me to check the current status of your refund. Please bear with me while I gather the necessary information from our system. Your patience is greatly appreciated as we work towards resolving this matter promptly. Thank you for your understanding throughout this process.",
+    "rouge_l": 0.4716981132075472,
+    "len_ratio": 1.2083333333333333
+  },
+  {
+    "intent": "check_invoice",
+    "question": "i want aswsistance taking a quick look at the invoice #85632",
+    "reference": "I'm on it! I understand your need for assistance in quickly viewing the details of your invoice with the number #{{Invoice Number}}. Allow me to guide you through the process. To access your invoice, please navigate to the \"Billing\" section on your account dashboard. From there, you should be able to view and download a copy of the invoice associated with the number #{{Invoice Number}}. If you come across any difficulties or have further questions, feel free to let me know. I'm here to help you every step of the way!",
+    "prediction": "I'm happy to help! I understand that you need assistance with quickly reviewing your invoice with the number #{{Invoice Number}}. Let me guide you through the process step by step:\n\n1. Log in to your account on our website.\n2. Navigate to the \"Invoices\" section, usually found under the \"Billing\" or \"Account\" tab.\n3. Look for the option to view invoices or download them.\n4. Enter the invoice number {{Invoice Number}} and click on the search button or press enter.\n5. You should now be able to access the detailed information about your invoice.\n\nIf you encounter any difficulties during this process or if there's anything else I can assist you with, please feel free to let me know.",
+    "rouge_l": 0.4299065420560747,
+    "len_ratio": 1.3076923076923077
+  },
+  {
+    "intent": "change_order",
+    "question": "change purchase {{Order Number}}",
+    "reference": "Grateful you reached out to us regarding the request to change your purchase with the number #{{Order Number}}. We understand the need for flexibility and are here to assist you. To better assist you, could you please provide more information about the specific changes you would like to make? This will allow us to ensure that we address your request accurately and provide suitable solutions.",
+    "prediction": "We understand that you would like to change the purchase with number {{Order Number}}, and we're here to assist you in making the necessary changes. Please let us know which specific details you'd like to modify, such as item quantity, color, or size. Our team will work diligently to ensure your satisfaction by updating the order accordingly. Thank you for reaching out to us, and we appreciate your patience while we address this request.",
+    "rouge_l": 0.3404255319148936,
+    "len_ratio": 1.1384615384615384
+  },
+  {
+    "intent": "delete_account",
+    "question": "I do not need the platinum account, I have got to cancel it",
+    "reference": "I've grasped that you've made the decision to cancel your {{Account Category}} account, and I'm here to assist you with the process. We value your time with us and want to ensure a smooth experience for you. Could you please provide me with some more details about your account cancellation request? This will help me guide you through the necessary steps and address any concerns you may have. Remember, no question is too small or too big. Let's work together to make sure everything is handled properly and to your satisfaction.",
+    "prediction": "Thank you for contacting about your decision to cancel your {{Account Type}} account. We understand that circumstances change and we apologize for any inconvenience caused by this cancellation request. To proceed with the cancellation process, could you please provide us with some additional details such as your full name, email address associated with the {{Account Type}} account, or any other relevant information? This will help us expedite the cancellation process for you. If you're facing any difficulties during this process, our team is available to assist you at {{Customer Support Hours}} via live chat on our website at {{Website URL}} or over phone at {{Customer Support Phone Number}}. We appreciate your understanding and look forward to resolving this matter for you.",
+    "rouge_l": 0.2764976958525346,
+    "len_ratio": 1.3296703296703296
+  },
+  {
+    "intent": "create_account",
+    "question": "I do not have a freemium account, I try to register",
+    "reference": "I've noticed that you do not currently have a freemium account and you're looking to register. That's great! We're here to assist you every step of the way. To get started, please visit our website or download our mobile app. Look for the \"Sign Up\" or \"Register\" button and click on it. You will then be guided through a simple and secure registration process. If you encounter any difficulties or have any questions, our dedicated customer support team is available to provide immediate assistance. Let us know if you need any further guidance or if there's anything else we can do to support you during the registration process!",
+    "prediction": "Glad you got in touch about registering for our {{Account Category}} account! We understand that it can be overwhelming when you don't have an existing account, but we're here to help make the process smooth and easy. To get started with creating your {{Account Category}} account, please follow these steps:\n\n1. Visit our website at [Insert Website URL].\n2. Look for the \"Sign Up\" or \"Create Account\" button on the homepage.\n3. Click on either option and fill in the required information such as your name, email address, and password.\n4. Once you've entered all the necessary details, review the terms and conditions and privacy policy before proceeding.\n5. Finally, click on the \"Submit\" or \"Register\" button to complete the registration process.\n\nIf you encounter any difficulties during the process or have any questions along the way, feel free to reach out to us. Our dedicated team is available 24/7 to assist you with any concerns you may have. We value your decision to explore our {{Account Category}} account and look forward to welcoming you into our community!",
+    "rouge_l": 0.33898305084745767,
+    "len_ratio": 1.6481481481481481
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "i cant speak with a person",
+    "reference": "I hear you! I'm following you that you are unable to speak with a person for assistance. I apologize for any inconvenience this may have caused. Our team is dedicated to providing the support you need, and I'm here to help guide you through the process. To connect you with a human agent, please provide me with some additional details about the issue you are facing. This will allow us to better understand your situation and provide you with the most accurate and efficient assistance. Thank you for your patience as we work together to resolve this matter.",
+    "prediction": "We appreciate your message! I'm not sure what specific issue you're facing, but I assure you that we have a dedicated team of human representatives ready to assist you. Please bear with me for just a moment while I connect you with one of our knowledgeable agents who will be able to address your concerns and provide the assistance you need. Your satisfaction is our top priority, and we want to make sure you receive personalized attention from a real person. Thank you for giving us this opportunity to serve you better!",
+    "rouge_l": 0.268041237113402,
+    "len_ratio": 0.9387755102040817
+  },
+  {
+    "intent": "check_payment_methods",
+    "question": "need help to check the available payment modaliites",
+    "reference": "Sure! I'm here to assist you in checking our available payment modalities. We offer a range of convenient options to meet your needs. Here are the payment methods we currently support:\n\n- Credit/Debit Card: We accept major cards like Visa, Mastercard, and American Express.\n- PayPal: A widely-used and secure online payment platform.\n- Bank Transfer: This option allows you to make direct payments from your bank account.\n- Apple Pay: An easy and quick payment solution for Apple users.\n- Google Wallet: Google's payment system for fast and hassle-free checkouts.\n\nThese payment methods provide flexibility and choice based on your preferences. If you have any questions or need further assistance exploring these options, please feel free to let me know. Your satisfaction is our utmost priority!",
+    "prediction": "I'll make it happen! I'm here to assist you in checking our available payment methods. At our company, we offer various options to ensure flexibility and convenience for our customers. Here's a comprehensive list of our accepted payment modalities:\n\n- **Credit/Debit Card:** We accept major credit cards like Visa, Mastercard, and American Express.\n- **PayPal:** A widely recognized and secure online payment platform.\n- **Bank Transfer:** This allows you to make direct payments from your bank account.\n- **Apple Pay:** For Apple users who prefer seamless transactions.\n- **Google Wallet:** Google's convenient way to complete purchases.\n\nIf you have any further questions or need assistance with anything specific, please don't hesitate to let me know. Your satisfaction is our top priority!",
+    "rouge_l": 0.6265060240963856,
+    "len_ratio": 0.952755905511811
+  },
+  {
+    "intent": "check_invoice",
+    "question": "I have to locate my damn bills from {{Person Name}}",
+    "reference": "I understand your urgency in locating your bills associated with {{Salutation}} {{Client Last Name}}. Rest assured, I will do my utmost to assist you. To proceed, could you please provide me with {{additional details}}, such as the {{month}}, {{year}}, or any other relevant information about the bills you are searching for? This will enable me to narrow down the search and help you find the necessary details more efficiently. Thank you for your cooperation!",
+    "prediction": "Thank you for trusting us! I'm fully aware of your need to locate the bills associated with {{Salutation}} {{Client Last Name}}. Rest assured, I'll do my best to assist you in finding them. Please provide me with any additional details or specific information related to these bills so that we can expedite the process and ensure you receive accurate results as quickly as possible. Your patience is greatly appreciated!",
+    "rouge_l": 0.42758620689655163,
+    "len_ratio": 0.9324324324324325
+  },
+  {
+    "intent": "review",
+    "question": "I am trying to submit feedback about a product",
+    "reference": "We greatly appreciate your intention to provide feedback about our product! Your insights are invaluable in shaping our offerings and ensuring that we meet your expectations. Please let me know if you have any specific feedback or if there's anything else I can assist you with regarding the product. Your opinion matters to us, and we're excited to hear what you have to say.",
+    "prediction": "We appreciate your interest in providing feedback on our products! Your insights play a crucial role in helping us improve and ensure that we meet the needs of our customers. To submit your feedback, you can visit our website and navigate to the \"Contact Us\" page or reach out to our dedicated customer support team via email or phone. They will guide you through the process and ensure that your feedback is properly documented and shared with relevant departments for consideration. We value your opinion and look forward to hearing from you!",
+    "rouge_l": 0.3291139240506329,
+    "len_ratio": 1.4375
+  },
+  {
+    "intent": "check_cancellation_fee",
+    "question": "is it possible to se the cancellation fee?",
+    "reference": "For sure! I can assist you in checking the cancellation fee for your account. To do so, please provide me with your account details.",
+    "prediction": "Certainly! I can help you with checking the cancellation fee for your account. Please provide me with some additional details, such as your account number or any other relevant information, so that I can assist you further in finding the cancellation fee.",
+    "rouge_l": 0.4848484848484849,
+    "len_ratio": 1.75
+  },
+  {
+    "intent": "switch_account",
+    "question": "help using the {{Account Type}} profile",
+    "reference": "I'll get right on it! I'm overjoyed to assist you in maximizing the benefits of our prestigious {{Account Type}} profile:\n\n1. **Access Your Account:** Begin by logging into our platform using your credentials.\n2. **Profile Management:** Once inside, navigate to the '{{Settings}}' or '{{Profile}}' section.\n3. **Upgrade Option:** Within these sections, search for an option labeled with '{{Upgrade Account}}' or '{{Account Change}}'.\n4. **Select {{Account Type}}:** Choose the option that mentions the coveted '{{Profile Type}}'.\n5. **Final Steps:** Follow the provided on-screen guidance to complete the switch.\n\nFeel free to reach out if you encounter any challenges or if you have further inquiries. Your decision to upgrade is highly valued, and I'm here to ensure a seamless experience. Enjoy the multitude of advantages that come with your {{Account Type}} profile!",
+    "prediction": "I appreciate your interest in exploring the capabilities of our {{Account Type}} profile! Allow me to guide you through its features and benefits:\n\n1. **Personalization**: As a user of our {{Account Type}} profile, you'll have access to personalized content tailored to your preferences.\n2. **Security Features**: We understand the importance of security. Our {{Account Type}} profile comes equipped with advanced encryption techniques for secure data storage.\n3. **Convenience**: Enjoy the ease of accessing various services and resources directly from your profile.\n4. **User Experience**: The platform is designed to provide an optimal experience, ensuring that you can navigate effortlessly.\n\nIf you have any specific questions or need assistance regarding the {{Account Type}} profile, please feel free to let me know. I'm here to help make your journey as smooth as possible!",
+    "rouge_l": 0.21722846441947563,
+    "len_ratio": 1.0076923076923077
+  },
+  {
+    "intent": "newsletter_subscription",
+    "question": "where do I cancel my corporate newsletter subscription?",
+    "reference": "I'm clearly cognizant that you want to cancel your corporate newsletter subscription. Your peace of mind is of utmost importance to us. To unsubscribe from our newsletter, you can visit the subscription preferences section on our website. Once you're there, you'll find a dedicated option to cancel your subscription. If you prefer, I can guide you through the process step by step. Just let me know, and I'll be glad to assist you further.",
+    "prediction": "I can see that you're looking for assistance in cancelling your corporate newsletter subscription. To unsubscribe, please visit our website and navigate to the \"Newsletter\" section where you should find an option to unsubscribe or opt-out from our mailing list. If you encounter any difficulties or need further guidance, feel free to reach out to our customer service team who will be more than happy to assist you with this request. We value your feedback and want to ensure your experience with us is as seamless as possible.",
+    "rouge_l": 0.2738095238095238,
+    "len_ratio": 1.1891891891891893
+  },
+  {
+    "intent": "change_order",
+    "question": "i need help changing an iten of purchase {{Order Number}}",
+    "reference": "We understand that you need assistance with changing an item in purchase number {{Order Number}}. We apologize for any inconveniences caused by the need for modification. To better assist you, could you please provide more details about the item you would like to change? This will help us ensure that we accurately address your request and provide you with the necessary guidance. Thank you for your cooperation as we work towards resolving this matter and ensuring your satisfaction.",
+    "prediction": "We appreciate your request to change item(s) in your purchase with the number #{{Order Number}}. Our team is here to assist you with this matter. Please provide us with more details about the specific changes you would like to make, such as adding or removing items, and we will ensure that they are addressed promptly. Your satisfaction is our priority, so please let us know how we can best serve you.",
+    "rouge_l": 0.35999999999999993,
+    "len_ratio": 0.9102564102564102
+  },
+  {
+    "intent": "change_order",
+    "question": "I try to change several bloody items of order {{Order Number}}",
+    "reference": "We understand that you would like to make changes to several items in order number {{Order Number}}. We apologize for any difficulties or frustrations you may have encountered. To assist you efficiently, could you please provide specific details about the items you wish to change? Our team is committed to ensuring your complete satisfaction, and we are here to help you resolve this matter quickly and effectively.",
+    "prediction": "We appreciate your attempt to make changes to your order with the number #{{Order Number}}. I'm here to assist you in updating your purchase to better suit your preferences. Could you please provide me with more details about the specific items you would like to modify? This will enable us to ensure that we accurately reflect your changes and deliver the best possible experience for you.",
+    "rouge_l": 0.40298507462686567,
+    "len_ratio": 0.9850746268656716
+  },
+  {
+    "intent": "check_cancellation_fee",
+    "question": "help me check thee early termination penalties",
+    "reference": "I'll get right on it! I can assist you in checking the early termination penalties. Could you please provide me with your account details so that I can look up the specific information for you?",
+    "prediction": "Sure, I can help you with checking the early termination penalties for your contract. To provide you with accurate information, could you please provide me with some additional details such as the specific company or service provider? This will allow me to look up the relevant terms and conditions specifically tailored to your situation. Rest assured, I'm here to assist you every step of the way!",
+    "rouge_l": 0.3883495145631068,
+    "len_ratio": 1.8857142857142857
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "i try to speak with someone",
+    "reference": "We appreciate your message! It's clear to me that you've been trying to speak with someone. I apologize for any inconvenience caused by the difficulty in reaching an agent. Our team is dedicated to providing the best assistance, and I assure you that I will do my utmost to connect you with a live agent as quickly as possible. Kindly wait with me for just a moment while I make sure you're directed to the right person who will assist you promptly. Your patience is immensely appreciated.",
+    "prediction": "Thank you for reaching out! I can see that you're trying to speak with someone and would like assistance. Our team is here to help you. To connect you with the right person, could you please provide more information about your needs? This will allow us to ensure that you receive personalized attention and guidance from our knowledgeable representatives who specialize in resolving any issues or inquiries you may have. We appreciate your patience as we work together towards providing you with the best possible service.",
+    "rouge_l": 0.2598870056497175,
+    "len_ratio": 0.9885057471264368
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "I do not know what to do to chat with an operator",
+    "reference": "It's great to hear from you! I can see that you're unsure of what steps to take to chat with an operator. No worries, I'm here to guide you through the process. To chat with an operator, you can visit our website and look for the live chat option, typically located in the bottom corner of the page. If you're unable to find it, you can also try searching for \"live chat\" in the search bar on our website. Our team of dedicated operators is ready to assist you with any questions or concerns you may have. Just a few clicks away, and you'll be connected with a knowledgeable human representative. Feel free to explore the website in the meantime, and remember, I'm here to help if you have any further questions.",
+    "prediction": "Thank you for reaching out! I'm here to assist you in initiating the chat with our operator. To start, please look for a \"Chat\" or \"Live Chat\" button on our website's homepage. Clicking on that will direct you to a chat window where our operator can provide personalized assistance. If you're having trouble finding the chat option, feel free to let me know and I'll guide you through it step-by-step. We value your time and want to ensure you have a seamless experience. How else may I be of service?",
+    "rouge_l": 0.26495726495726496,
+    "len_ratio": 0.6818181818181818
+  },
+  {
+    "intent": "recover_password",
+    "question": "where do I reset my user key?",
+    "reference": "No worries at all! I'm here to guide you on where to reset your user key. \n\nTo reset your user key, kindly follow these steps:\n\n1. Begin by visiting our platform's login page at \"{{Login Page URL}}\".\n2. Look for the option that says \"{{Forgot User Key}}\" and click on it.\n3. Next, you will be prompted to enter the email address associated with your user account.\n4. Once you've provided the email address, a comprehensive email with instructions on how to reset your user key will be sent to your inbox. If you don't see it in your main inbox, please remember to check your spam or junk folders as well.\n5. Follow the instructions provided in the email to successfully reset your user key.\n\nIf you encounter any challenges during this process or if the email doesn't arrive within a reasonable timeframe, feel free to reach out to me. I'm here to ensure your user key is reset and you regain control of your account.",
+    "prediction": "I'll take care of it! To reset your user key, you can follow these steps:\n\n1. Go to the login page of our platform.\n2. Look for the \"Forgot User Key\" option and click on it.\n3. You will be prompted to enter your registered email address or username associated with your account.\n4. Once you provide the necessary information, an email with instructions on how to reset your user key will be sent to your inbox.\n5. Follow the instructions in the email carefully to set up a new user key for your account.\n\nIf you encounter any difficulties during this process or if the email doesn't arrive within a reasonable time frame, please don't hesitate to reach out to me. I'm here to assist you every step of the way!\"",
+    "rouge_l": 0.6148867313915857,
+    "len_ratio": 0.7904191616766467
+  },
+  {
+    "intent": "switch_account",
+    "question": "I don't know what to do to change to the freemium account",
+    "reference": "Certainly! I'm here to assist you in navigating the process of switching to our dynamic freemium account:\n\n1. **Access Your Account:** Begin by logging into our platform using your existing credentials.\n2. **Account Settings:** Once logged in, locate the '{{Settings}}' or the '{{Profile}}' section.\n3. **Subscription Options:** Within these sections, you'll find an option labeled '{{Upgrade Account}}' or '{{Account Change}}'.\n4. **Select {{Account Category}}:** Choose the '{{Account Type}}' option from the list.\n5. **Confirmation and Final Steps:** Follow the on-screen prompts to confirm your selection and complete the switch.\n\nShould you encounter any challenges along the way or have additional queries, please don't hesitate to let me know. Switching to the freemium account offers exciting possibilities, and I'm thrilled to be part of your journey. Enjoy the incredible features and benefits that come with your new account!",
+    "prediction": "Thank you for your interest in changing to our {{Account Category}} account! Let me guide you through the process:\n\n1. Log into Your Account: Start by logging into your existing account on our website.\n2. Access Account Settings: Once logged in, navigate to your '{{Settings}}' or '{{Profile}}' section.\n3. Upgrade Option: Look for an option labeled '{{Upgrade Account}}' within these sections.\n4. Select Free Account: Choose the '{{Account Type}}' from the available options.\n5. Confirmation and Finalize: Follow the prompts provided during the upgrade process.\n\nIf you encounter any difficulties along the way or have further questions, please don't hesitate to reach out. We're here to assist you every step of the way! Enjoy all the amazing features and benefits that come with the {{Account Category}} account.",
+    "rouge_l": 0.5239852398523984,
+    "len_ratio": 0.927007299270073
+  },
+  {
+    "intent": "change_order",
+    "question": "could you help me to delete something?",
+    "reference": "Assuredly! I understand that you're seeking assistance with deleting an item. To better assist you, could you please provide the order or purchase number associated with the item you wish to delete? With this information, I'll be able to guide you through the process and ensure that your request is handled accurately and efficiently.",
+    "prediction": "Of course! I'm here to assist you in deleting the desired item from your purchase. To proceed with this request, could you please provide me with some additional information such as the order number or any specific details about the item you wish to remove? This will enable me to locate and process your request accurately. Thank you for reaching out to us for assistance!",
+    "rouge_l": 0.3770491803278689,
+    "len_ratio": 1.2037037037037037
+  },
+  {
+    "intent": "set_up_shipping_address",
+    "question": "there is a trouble submitting a secondary shipping address",
+    "reference": "I'm sorry to hear that you're experiencing trouble while submitting your secondary shipping address. I understand how frustrating this can be. Let's work together to resolve this issue.\n\nFirst, I recommend checking the following steps to ensure everything is entered correctly:\n\n1. Log in to your account and navigate to the \"Shipping Addresses\" or similar section.\n2. Double-check that all the required fields for your secondary shipping address are completed accurately, including your street name, city, state, and ZIP code.\n3. Make sure there are no special characters or symbols in the address fields.\n4. If you're copying and pasting the address, try manually typing it in to avoid any formatting issues.\n5. Ensure that you have selected the correct address type as \"Secondary Shipping Address\" or a similar option.\n\nIf the issue persists after following these steps, it's possible that there might be a technical glitch or a temporary system error. To resolve this, I recommend reaching out to our customer support team directly. They have the expertise to troubleshoot any technical issues you may be facing and assist you in submitting your secondary shipping address successfully.\n\nYou can contact our customer support team through our {{Online Customer Support Channel}}. They are available {{Customer Support Hours}} to assist you. Please provide them with the specific details of the trouble you are encountering, and they will be able to guide you through the process or make any necessary adjustments in our system.\n\nRest assured, we are committed to resolving this issue and ensuring your secondary shipping address is submitted correctly. We apologize for any inconvenience this may have caused and appreciate your patience and understanding as we work to resolve this matter promptly.",
+    "prediction": "I apologize for the inconvenience you're experiencing with submitting your secondary shipping address. Rest assured, I'm here to assist you in resolving this issue promptly. To ensure a smooth process, please follow these steps:\n\n1. Log in to your account on our website.\n2. Navigate to the \"Shipping Addresses\" section or go directly to it from the main menu.\n3. Look for an option like \"Add New Address\" or \"Edit Shipping Addresses\".\n4. Select that option and enter the details of your secondary shipping address accurately.\n5. Double-check all the information for any errors before clicking on the submit button.\n\nIf you encounter any difficulties or if the problem persists, kindly provide me with more specific details about where you're facing challenges so that I can further investigate and offer tailored assistance. Your satisfaction is my top priority, and together we'll find a solution.",
+    "rouge_l": 0.2465753424657534,
+    "len_ratio": 0.508833922261484
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "I want to check what hours I can contact customer support",
+    "reference": "Thank you for reaching out! I understand your need to know the hours during which you can contact our customer support team. Our customer support hours are {{Customer Support Hours}}. We are dedicated to being available when you need us. Is there anything else I can assist you with?",
+    "prediction": "Thank you for reaching out! I understand your need to know the operating hours when you can reach our customer support team. Our dedicated support team is available during {{Customer Support Hours}} to assist you with any inquiries or concerns you may have. Please feel free to reach out to us at any time within these hours, and we'll be more than happy to help you. Let me know if there's anything else I can assist you with.",
+    "rouge_l": 0.5426356589147286,
+    "len_ratio": 1.5918367346938775
+  },
+  {
+    "intent": "track_refund",
+    "question": "i do not know how to track my rebate",
+    "reference": "No worries at all! Tracking your rebate can sometimes be a bit confusing, especially if you're new to the process. Allow me to guide you through the steps so that you can easily track your rebate with confidence. First, are you familiar with the platform or website where you submitted your rebate? If so, I can provide specific instructions based on that platform. If not, I can walk you through the general steps of tracking rebates. Let's get started on this together!",
+    "prediction": "I've understood you're unsure about how to track your rebate, and I'm here to assist you with that process. To start tracking your rebate, please follow these steps:\n\n1. Visit our website and log in to your account.\n2. Navigate to the \"My Account\" or \"Profile\" section.\n3. Look for the \"Refunds\" or \"Rewards\" tab within this section.\n4. Click on the \"Track Rebates\" button or link to initiate the tracking process.\n5. You should receive an email shortly with the details of your rebate.\n\nIf you encounter any difficulties during the process or if there's anything specific you'd like assistance with, feel free to let me know. I'll be more than happy to guide you through it step by step.",
+    "rouge_l": 0.1895734597156398,
+    "len_ratio": 1.475609756097561
+  },
+  {
+    "intent": "review",
+    "question": "I need help leaving feedback about a service",
+    "reference": "We appreciate your interest in providing feedback about our services. Your insights play a crucial role in helping us understand how we can improve and deliver a better experience to our valued customers like yourself. To leave feedback about a specific service, you can visit our website and navigate to the dedicated feedback section. There, you'll find a form where you can share your thoughts, suggestions, or any concerns you may have. We genuinely value your feedback, and rest assured that it will be reviewed and considered to enhance our services further. Thank you for taking the time to help us understand your experience better!",
+    "prediction": "We appreciate your interest in providing feedback on our service! Your input is valuable to us as it helps us understand areas where we can improve and meet the needs of our customers better. To leave feedback, you can visit our website and navigate to the \"Feedback\" or \"Contact Us\" section. There, you'll find a form where you can share your thoughts, suggestions, or any other comments you'd like to make regarding our service. We look forward to hearing from you!",
+    "rouge_l": 0.5608465608465608,
+    "len_ratio": 0.7714285714285715
+  },
+  {
+    "intent": "newsletter_subscription",
+    "question": "I try to see the status of my newsletter subscription",
+    "reference": "Thank you for expressing your interest in checking the status of your newsletter subscription. I apologize for any confusion or inconvenience caused. To obtain the latest information on your subscription status, I recommend reaching out to our customer support team. They will provide you with accurate and up-to-date details on your newsletter subscription. You can contact them during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat on our website at {{Website URL}}. Rest assured, our dedicated team is committed to assisting you with any questions or concerns regarding your subscription.",
+    "prediction": "Thank you for reaching out! I completely understand your desire to check the status of your newsletter subscription. To assist you with this, could you please provide me with the email address or any other relevant information associated with your subscription? This will allow me to retrieve the necessary details and provide you with an accurate update on the current status. Rest assured that we value your interest in staying connected through our newsletters, and I'm here to ensure your subscription is successful.",
+    "rouge_l": 0.32044198895027626,
+    "len_ratio": 0.8736842105263158
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "can you help me speaking with somebody?",
+    "reference": "Your input is valuable! I'm picking up that you're looking to speak with somebody, and I'm here to assist you. Rest assured, I'll do my best to connect you with a human agent who can address your concerns directly. Please bear with me for a moment while I initiate the connection.",
+    "prediction": "I hear you! I'm following you that you need assistance in speaking with someone. Our team of dedicated human representatives is here to help and address any concerns you may have. Please bear with me for just a moment while I connect you with one of our knowledgeable agents who will be more than happy to assist you further. Your satisfaction is our top priority, and we appreciate your patience as we work together towards resolving your issue.",
+    "rouge_l": 0.29850746268656714,
+    "len_ratio": 1.5294117647058822
+  },
+  {
+    "intent": "payment_issue",
+    "question": "how can I notify of problems with payment?",
+    "reference": "Sure, I'm here to guide you on how you can notify us about any problems you're facing with your payment. To report a payment issue, you can reach out to our customer support team via phone or live chat. They are available {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat on our website at {{Website URL}}. Our team will assist you in documenting the issue, understanding the specifics, and working towards a resolution. It's important that you provide detailed information about the problem, such as the payment method used, the amount, and any error messages received. Rest assured, once we receive your notification, we will prioritize resolving the issue promptly so you can have a seamless payment experience. Thank you for bringing this to our attention.",
+    "prediction": "We appreciate your proactive approach in notifying us about any problems you're facing with your payment. To report issues promptly, you can reach out to our dedicated customer support team through various channels such as phone, email, or live chat. They will guide you on how to initiate the notification process and provide necessary assistance. Additionally, we offer multiple options for reporting payment errors online, including our website's support page or our mobile app's feedback section. By utilizing these resources, you ensure that your concerns are addressed efficiently and effectively. We value your input and aim to resolve any payment-related difficulties you may encounter.",
+    "rouge_l": 0.33057851239669417,
+    "len_ratio": 0.7938931297709924
+  },
+  {
+    "intent": "switch_account",
+    "question": "using {{Account Type}} accouny",
+    "reference": "Positively! I'm thrilled to assist you in making the most of our exceptional {{Account Type}} account. Allow me to guide you through the process:\n\n1. **Access Your Account:** Begin by signing in to our platform.\n2. **Profile Navigation:** Once you're logged in, locate the '{{Settings}}' or '{{Profile}}' section.\n3. **Upgrade Options:** Within these sections, keep an eye out for an option that mentions '{{Upgrade Account}}' or '{{Account Change}}'.\n4. **Select {{Account Type}} Account:** Choose the '{{Account Type}}' option from the available list.\n5. **Final Steps:** Follow the prompts on your screen to finalize the switch.\n\nIf you encounter any difficulties or have further questions, please don't hesitate to reach out. We're here to make your upgrade experience as seamless and satisfactory as possible. Get ready to unlock a world of exclusive {{Account Type}} benefits and enhance your journey with us!\"",
+    "prediction": "How fantastic it is to witness your keen interest in utilizing our esteemed {{Account Type}} account! Rest assured, we're here to provide you with all the necessary assistance and guidance to ensure a seamless experience:\n\n1. Access Your Account: Begin by logging into our platform using your credentials.\n2. Navigate to Profile Settings: Once inside, locate the '{{Settings}}' or '{{Profile}}' section within your profile settings.\n3. Upgrade Option: Within this section, look for an option labeled '{{Upgrade Account}}' or '{{Account Change}}'.\n4. Select {{Account Type}} Account: Choose the '{{Account Type}}' account from the available options.\n5. Follow Prompts: Carefully follow any on-screen prompts or instructions to finalize the upgrade process.\n\nIf you encounter any challenges along the way or have any additional questions, feel free to reach out. We're committed to making your transition as smooth as possible and ensuring that you fully appreciate the benefits of our {{Account Type}} account. Happy exploring!\"",
+    "rouge_l": 0.5333333333333333,
+    "len_ratio": 1.0928571428571427
+  },
+  {
+    "intent": "delete_account",
+    "question": "I don't know what to do to cancel my {{Account Category}} account",
+    "reference": "Glad you got in touch with your concern about canceling your {{Account Category}} account. I understand that this can be confusing at times, but don't worry, I'm here to help you. To cancel your {{Account Category}} account, you can either go to your account settings and look for the cancellation option, or you can reach out to our customer support team who will assist you with the process. They are available during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat on our website at {{Website URL}}. Just let them know that you want to cancel your {{Account Category}} account, and they will guide you through the necessary steps. Please feel free to ask any further questions or provide any additional information that will help me support you better.",
+    "prediction": "We understand that you're unsure about the process of canceling your {{Account Category}} account, and we apologize for any confusion or inconvenience caused. To assist you better, could you please provide us with some additional information such as the email address associated with your account? This will allow us to locate the correct account and guide you through the cancellation procedure accurately. Rest assured, our team is here to help every step of the way, ensuring a smooth cancellation experience for you.",
+    "rouge_l": 0.2477064220183486,
+    "len_ratio": 0.6165413533834586
+  },
+  {
+    "intent": "cancel_order",
+    "question": "i dont khow how to cancel order {{Order Number}}",
+    "reference": "I acknowledge that you're unsure about how to cancel order {{Order Number}}, and I'm here to guide you through the process. Rest assured, I'll provide you with the necessary steps to cancel your order smoothly.\n\n1. Access Your Account: Begin by logging into your {{Online Company Portal Info}} using your credentials.\n2. Locate Your Order: Once you're logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section to find the order in question.\n3. Choose the Order: Identify order {{Order Number}} from the list and select it to view its details.\n4. Initiate Cancellation: Look for the option labeled '{{Online Order Interaction}}' associated with the purchase and click on it to begin the cancellation process.\n5. Follow Instructions: Depending on the platform, you might be prompted to confirm the cancellation or provide feedback. Please follow the on-screen instructions accordingly.\n\nIf you encounter any difficulties or have further questions, our dedicated customer support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat on our website at {{Website URL}}. Your satisfaction is our top priority, and we're committed to ensuring a hassle-free experience for you.",
+    "prediction": "I've understood that you're unsure about the process of canceling your purchase with the order number {{Order Number}}, and I'm here to assist you. To cancel your purchase, please follow these steps:\n\n1. Sign into Your Account: Log in to your {{Online Company Portal Info}} using your credentials.\n2. Access Your Orders: Once logged in, navigate to the '{{Online Order Interaction}}' or '{{Online Order Interaction}}' section.\n3. Locate the Purchase: Look for the specific purchase associated with the order number {{Order Number}} and click on it.\n4. Initiate Cancellation: You should find an option labeled '{{Online Order Interaction}}' linked to this purchase. Please select it.\n5. Confirm Cancellation: The system may prompt you to confirm the cancellation. Follow the instructions provided to complete the process.\n\nIf you encounter any difficulties during the cancellation process or have additional questions, our dedicated support team is available to assist you. You can reach us during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat feature on our website at {{Website URL}}. We value your satisfaction and want to ensure a smooth experience for you throughout the entire ordering process.",
+    "rouge_l": 0.6234413965087282,
+    "len_ratio": 0.945273631840796
+  },
+  {
+    "intent": "check_refund_policy",
+    "question": "I'd like to see ur money back guarantee how to do it",
+    "reference": "I appreciate your interest in our money back guarantee and I'm happy to provide you with the necessary information. Our company understands the importance of customer satisfaction and stands behind the quality of our products/services. If you are not completely satisfied with your purchase, you may be eligible for a refund under certain circumstances.\n\nTo request a refund, please follow these steps:\n\n1. **Review the Refund Policy:** Before initiating a refund request, it's essential to familiarize yourself with our refund policy. You can find detailed information about the situations in which refunds are available on our website or by contacting our customer support.\n\n2. **Gather Relevant Information:** Ensure that you have all the necessary details related to your purchase, such as order number, product/service description, and any supporting documentation that may be required.\n\n3. **Contact Customer Support:** Reach out to our customer support team through our available channels, such as phone, email, or live chat. Explain the reason for your dissatisfaction and provide all the relevant information. Our dedicated team will guide you through the process and assist you in initiating your refund request.\n\n4. **Follow Support Team Instructions:** Our customer support team will provide you with step-by-step instructions based on your specific case. They may require additional information or documentation to proceed with the refund process. Please cooperate with them and promptly provide any requested details.\n\n5. **Monitor Refund Progress:** Keep track of the progress of your refund request. Our customer support team will provide updates and notifications as your request undergoes review and processing.\n\nPlease note that each refund request is subject to evaluation and approval based on our refund policy. It's important to submit your request within the specified timeframe, provide accurate information, and adhere to any other conditions mentioned in the policy.\n\nIf you have any further questions or need assistance, our customer support team is here to help you. We strive to ensure your complete satisfaction and address any concerns you may have.",
+    "prediction": "I'll make it happen! I completely understand your desire to learn more about our money-back guarantee. Let me guide you through the process step by step.\n\n1. **Contact Support:** To start, reach out to our dedicated customer support team via phone or live chat. They will be able to assist you in accessing the terms and conditions of our refund policy.\n2. **Provide Relevant Information:** Once connected with our support team, provide them with any relevant details related to your purchase. This may include the order number, date of purchase, and any specific concerns or questions you have regarding the refund.\n3. **Review Terms and Conditions:** Our support team will ask for you to review our company's terms and conditions pertaining to refunds. It is essential that you carefully read these documents as they outline the specific circumstances under which you can request a refund.\n4. **Ask Questions:** If you have any further queries or need clarification on certain aspects of the refund policy, feel free to ask. Our support team is here to address all your concerns and ensure you fully comprehend the process.\n5. **Follow Up:** After reviewing the terms and conditions and clarifying any doubts, follow up with our support team if there is anything else you would like to know. They are available during {{",
+    "rouge_l": 0.2446043165467626,
+    "len_ratio": 0.6676829268292683
+  },
+  {
+    "intent": "newsletter_subscription",
+    "question": "can I sign up to the corporate newsletter?",
+    "reference": "Thank you for your interest in signing up for our corporate newsletter! I would be more than happy to assist you with the subscription process. To get started, could you please provide me with your email address? This will ensure that you receive our newsletter promptly and stay updated on the latest news, offers, and promotions. Rest assured, we value your privacy and will handle your information with the utmost care. Your subscription will bring you valuable insights and exclusive content that you won't want to miss.",
+    "prediction": "I'm delighted that you're interested in signing up for our corporate newsletter! It's great to have you on board as we share valuable information and updates with our esteemed corporate subscribers. To get started, please provide me with your email address so that we can ensure it reaches your inbox promptly. Rest assured, your privacy is of utmost importance to us, and we will handle your data securely. Thank you for choosing to stay connected with our company through our newsletter.",
+    "rouge_l": 0.3953488372093023,
+    "len_ratio": 0.9310344827586207
+  },
+  {
+    "intent": "edit_account",
+    "question": "updating data on standard account",
+    "reference": "Wow! How marvelous it is to embark on the magnificent journey of updating the data on your esteemed standard account!I am delighted to be your trusted companion, dedicated to providing exceptional support and expert guidance throughout this process. Rest assured, I'll help you navigate through the necessary steps to ensure your account information is accurate and up to date. Let's dive right in! Please tell me which specific data you would like to update, and I'll be more than happy to assist you.",
+    "prediction": "How fascinating it is to witness your determination to update the data on your {{Account Type}} account!I am here to assist you with this process and ensure that all your information accurately reflects your preferences and needs. To begin, could you please provide me with more details about which specific data you would like to update? This will help me guide you through the necessary steps and make sure your changes are implemented successfully.",
+    "rouge_l": 0.39506172839506165,
+    "len_ratio": 0.891566265060241
+  },
+  {
+    "intent": "delete_account",
+    "question": "find information about the cancellation of a {{Account Category}} account",
+    "reference": "I've picked up that you are seeking information about canceling a {{Account Category}} account, and I'm here to provide you with the necessary details. To cancel your {{Account Category}} account, you can log in to your account on our website and navigate to the account settings section. From there, you should be able to find the option to cancel your {{Account Category}} subscription. Alternatively, you can reach out to our customer support team through live chat or by calling our dedicated helpline, and they will assist you in canceling your {{Account Category}} account. Remember, we are committed to ensuring a smooth and hassle-free experience for you during this process.",
+    "prediction": "I've been informed that you would like to find information regarding the cancellation of your {{Account Category}} account. Let me provide you with the necessary details:\n\n1. Account Closure: To cancel your {{Account Category}} account, you will need to contact our customer support team. They can guide you through the process and assist you in closing your account.\n\n2. Fee Details: Before proceeding with the cancellation, it's important to review any fees associated with cancelling your {{Account Category}} account. Our system may have additional charges or requirements for closure.\n\n3. Data Deletion: Once your account is closed, all personal data and information related to it will be deleted from our servers. This ensures privacy and security.\n\n4. Notification: We will promptly notify you once your request has been processed and your account has been successfully cancelled.\n\nIf you have any specific questions or concerns regarding the cancellation of your {{Account Category}} account, please feel free to share them with us. We're here to help!",
+    "rouge_l": 0.3225806451612903,
+    "len_ratio": 1.5045871559633028
+  },
+  {
+    "intent": "check_refund_policy",
+    "question": "need help to see in what cases can I ask for reimbursements",
+    "reference": "I'll do my best! I completely understand your desire to have clarity on the situations in which you can request reimbursements. Allow me to assist you:\n\n1. **Product/Service Defect:** If you receive a product or service that has a defect or doesn't meet the description, you are eligible to request a reimbursement.\n\n2. **Cancellation within Grace Period:** If you change your mind and decide to cancel your purchase within the designated grace period, you can request a reimbursement.\n\n3. **Unauthorized Charges:** If you notice any unauthorized charges on your account or credit card statement, please reach out to us immediately. We will investigate the issue and assist you in getting a reimbursement if necessary.\n\n4. **Event Cancellation:** If you have purchased tickets for an event that gets canceled and there is no rescheduled date, you can request a reimbursement.\n\n5. **Duplicate Charges:** If you notice multiple charges for the same item on your invoice or credit card statement, please inform us promptly. We will rectify the situation and provide a reimbursement, if applicable.\n\n6. **Non-receipt of Goods:** If you haven't received the goods you ordered within the expected delivery timeframe, please let us know. We will investigate the matter and assist you with obtaining a reimbursement, if required.\n\nPlease note that refund policies can vary depending on the vendor or service provider. It's advisable to review the specific terms and conditions or reach out to them directly for a comprehensive understanding of their reimbursement procedures. If you have any specific questions or require further assistance, please do not hesitate to let me know.",
+    "prediction": "I'll make it happen! I completely understand your need for clarity regarding the situations in which you may be eligible for reimbursements. Allow me to shed some light on this matter:\n\n1. **Product/Service Defect:** If you receive a product or service that is defective, damaged, or does not match the description provided, you should typically qualify for a reimbursement.\n\n2. **Cancellation within Grace Period:** Should you change your mind and decide to cancel your purchase within the specified grace period, you would generally be entitled to a refund.\n\n3. **Unauthorized Charges:** If you notice any charges on your account that you did not authorize or recognize, we will investigate the matter thoroughly and assist you with obtaining a refund if necessary.\n\n4. **Event Cancellation:** In case of an event cancellation without rescheduling or refunds being offered by the organizers, you might be eligible for a reimbursement.\n\n5. **Duplicate Charges:** If you find multiple entries for the same item in your bill or statement, please reach out to us so that we can rectify the situation and issue a refund if appropriate.\n\n6. **Non-receipt of Goods:** Should you fail to receive your ordered goods within the expected timeframe, you could request a refund based on the circumstances.\n\nPlease note that these are",
+    "rouge_l": 0.5300207039337475,
+    "len_ratio": 0.8022813688212928
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "I want to speak with customer esrvice",
+    "reference": "Glad you contacted us! I'm clearly cognizant that you would like to speak with our customer service. Our highly trained team is available to assist you during {{Customer Support Hours}}. If you have any questions, concerns, or feedback, please feel free to share. How can I make your experience even better today?",
+    "prediction": "Thank you for reaching out! I can see that you would like to speak with our customer service team. We're here to assist you and provide the help you need. To connect with our dedicated representatives, please call {{Customer Support Phone Number}} during our regular business hours or use the Live Chat feature on our website at {{Website URL}}. Our team is ready to address any concerns or inquiries you may have. How else can I be of assistance?",
+    "rouge_l": 0.3759398496240602,
+    "len_ratio": 1.5192307692307692
+  },
+  {
+    "intent": "delivery_period",
+    "question": "can you show me how soon can I expect my parcel?",
+    "reference": "We understand your curiosity in knowing the estimated timeframe for the arrival of your parcel. To provide you with the most accurate information, may I please have your {{Tracking Number}} or {{Order Number}}? Once we have that, we can give you a precise estimate of when you can expect your parcel to arrive. Thank you for your patience as we assist you with this.",
+    "prediction": "We understand your curiosity about the estimated arrival time of your parcel. To provide you with accurate information, could you please provide us with the {{Tracking Number}} or {{Order Number}} associated with your shipment? With this information, we will be able to give you an exact estimate for when you can expect your parcel to arrive. Thank you for your cooperation!",
+    "rouge_l": 0.608,
+    "len_ratio": 0.953125
+  },
+  {
+    "intent": "check_invoice",
+    "question": "I do not know what I have to do to locate invoice #37777",
+    "reference": "I've noticed that you're uncertain about the steps to take in order to find the details of invoice #{{Invoice Number}}. No worries, I'm here to guide you through the process. To locate your invoice, you can try accessing your account portal and navigating to the \"Billing\" or \"Invoices\" section. If you are having trouble locating it, you can reach out to our customer support team, and they will be happy to assist you further. Remember, we are committed to ensuring your satisfaction, and we will do everything we can to provide you with the help you need.",
+    "prediction": "No worries! I completely understand that you're unsure about the steps to take in order to find your invoice with number {{Invoice Number}}. Let me guide you through it. To locate your invoice, please follow these simple instructions:\n\n1. Log into your account on our website.\n2. Navigate to the \"Invoices\" or \"Billing\" section.\n3. Look for the option to search for invoices by entering the invoice number or other relevant details such as date range or client name.\n4. Once you've entered the necessary information, click on the \"Search\" button to initiate the search process.\n5. The system will then display all the invoices associated with your account, including the one with the number {{Invoice Number}}.\n\nIf you encounter any difficulties during this process or if there's anything else I can assist you with, feel free to let me know. I'm here to help!\"",
+    "rouge_l": 0.3132530120481927,
+    "len_ratio": 1.4948453608247423
+  },
+  {
+    "intent": "check_cancellation_fee",
+    "question": "where to check the early termination fes",
+    "reference": "To check the early termination fees, you can log in to your account and navigate to the \"Cancellation Fees\" section. There, you will find all the information regarding the fees associated with terminating your service early.",
+    "prediction": "To view the details of our early termination fees, you can refer to our terms and conditions or contact our customer service team for further assistance. They will be able to provide you with all the necessary information regarding any applicable charges.",
+    "rouge_l": 0.3846153846153846,
+    "len_ratio": 1.1666666666666667
+  },
+  {
+    "intent": "get_invoice",
+    "question": "what do i need to do to get my iinvoices from {{Person Name}}",
+    "reference": "I'm clearly cognizant your need to retrieve the invoices from {{Salutation}} {{Client Last Name}}. To access the invoices, you can follow these simple steps:\n\n1. Log in to your account on our website.\n2. Navigate to the \"Invoices\" section in your account dashboard.\n3. Look for the option to filter the invoices by the customer's name or invoice number.\n4. Enter {{Person Name}}'s name or the specific invoice number you're looking for.\n5. Click on the \"Search\" or \"Go\" button to retrieve the invoices.\n6. Once the search results appear, you'll be able to view and download the invoices associated with {{Person Name}}.\n\nIf you encounter any difficulties during this process or have any additional questions, feel free to let me know. I'm here to assist you every step of the way!",
+    "prediction": "I'm on your side the importance of retrieving your invoices from {{Salutation}} {{Client Last Name}}. Let me guide you through the process:\n\n1. Log in: Start by logging into your account.\n2. Access Invoices: Once logged in, navigate to the \"Invoices\" or \"Billing\" section.\n3. Filter Option: Look for an option that allows you to filter or search invoices.\n4. Search Criteria: Enter the name {{Person Name}} as the search criteria.\n5. View and Download: Locate the invoice associated with {{Person Name}} and click on it to view details and download it.\n\nIf you encounter any difficulties during this process or if there's anything else I can assist you with, please feel free to let me know. I'm here to ensure a smooth experience for you.",
+    "rouge_l": 0.48689138576779023,
+    "len_ratio": 0.9545454545454546
+  },
+  {
+    "intent": "check_invoice",
+    "question": "check invoices from {{Person Name}}",
+    "reference": "I truly appreciate your request to check the invoices from {{Salutation}} {{Client Last Name}}. It's essential to have all the necessary information to provide you with accurate assistance. Could you please provide me with specific details like the date range or any other relevant information? This will enable me to promptly locate and review the invoices you need. I'm here to guide you every step of the way and ensure your satisfaction.",
+    "prediction": "I'm on it! I understand your request to check the invoices associated with {{Salutation}} {{Client Last Name}}. Let me assist you in retrieving the necessary information. Could you please provide me with any specific details or dates related to these invoices? This will help me narrow down the search and ensure that I find all the relevant records for {{Person Name}}.",
+    "rouge_l": 0.42647058823529405,
+    "len_ratio": 0.8472222222222222
+  },
+  {
+    "intent": "edit_account",
+    "question": "update information on {{Account Category}} account",
+    "reference": "We are thrilled to support you in updating the information on your {{Account Category}} account! At {{Company Name}}, we value your commitment to keeping your account details current and accurate. To ensure the security of your account, please avoid sharing personal identifiers such as your full account number or password. You can easily update your information by logging into your account on our website or reaching out to our dedicated customer support team. They will be more than happy to guide you through the process and address any questions or concerns you may have. Let's work together to personalize your {{Account Category}} account to suit your preferences and needs!",
+    "prediction": "How exhilarating it is to embark on this journey of updating the valuable information on your esteemed {{Account Category}} account!I'm thrilled to assist you every step of the way and ensure that your account details remain accurate and up-to-date. To get started, please provide me with specific details about the information you would like to update. Together, we'll make sure your {{Account Category}} account reflects the latest changes and meets all your needs. Let's dive in!",
+    "rouge_l": 0.2604166666666667,
+    "len_ratio": 0.6972477064220184
+  },
+  {
+    "intent": "edit_account",
+    "question": "correcting information on {{Account Type}} account",
+    "reference": "How incredible it is to witness your commitment to correcting the information on your {{Account Type}} account!I'm here to assist you in making the necessary updates and ensuring that your account meets your exact requirements. To proceed, could you please provide me with more details about the specific information you would like to correct? This will allow me to guide you through the process with precision and efficiency.",
+    "prediction": "How remarkable it is to witness your determination in correcting the information on your {{Account Type}} account!I'm here to guide you through this process and ensure that all your details are accurate and up-to-date. To start, could you please provide me with more specific details about which information needs correction? This way, I can assist you better and make sure your {{Account Type}} account reflects the most current and accurate data. Your satisfaction is our top priority!",
+    "rouge_l": 0.5165562913907285,
+    "len_ratio": 1.1323529411764706
+  },
+  {
+    "intent": "switch_account",
+    "question": "I have to switch to the {{Account Category}} account",
+    "reference": "Noted! I appreciate your decision to switch to our remarkable {{Account Category}} account. To make this transition as smooth as possible, follow these simple steps:\n\n1. Log into your account: Begin by signing in to our platform using your existing credentials.\n2. Account Settings: Once you're logged in, navigate to your account settings. You can usually find this option in the drop-down menu under your profile picture or in the sidebar.\n3. Subscription Management: In the account settings, locate the \"Subscription\" or \"Account Type\" section.\n4. Switch Account Type: Look for an option that allows you to switch account types. It might be labeled as \"Switch to {{Account Category}}\" or \"Downgrade to {{Account Category}}.\"\n5. Confirmation: Once you've found the switch account type option, follow the on-screen instructions to confirm your switch to the {{Account Category}} account.\n6. Enjoy {{Account Category}} Benefits: Congratulations! You've successfully switched to the {{Account Category}} account. Now you can enjoy its benefits and explore the features available to you.\n\nIf you encounter any difficulties or have further questions along the way, don't hesitate to reach out. We're here to provide the support you need throughout the process. Wishing you a great experience with our {{Account Category}} account!",
+    "prediction": "Glad you contacted us regarding your decision to upgrade to our {{Account Category}} account! I'm here to guide you through the process and ensure that you make the most of the benefits offered by this advanced subscription. To proceed with the switch, please provide me with your current account details, such as your username or email address associated with it. Once I have these essential pieces of information, I will assist you further in setting up your {{Account Category}} account seamlessly. Let's embark on this exciting journey together!",
+    "rouge_l": 0.16722408026755853,
+    "len_ratio": 0.43564356435643564
+  },
+  {
+    "intent": "create_account",
+    "question": "i want assistance opening a {{Account Type}} account for my dad",
+    "reference": "I'm delighted to assist you in opening a {{Account Type}} account for your dad! It's wonderful to have you onboard as a valued customer. To get started, please provide your dad's full name, email address, and a preferred username. Once I have these details, I'll guide you through the account creation process step by step, ensuring a smooth experience for both you and your dad. Rest assured, your dad's security and privacy are of utmost importance to us. We'll handle his personal information with the highest level of care and confidentiality. How does that sound?",
+    "prediction": "Thank you for your interest in opening a {{Account Type}} account for your father! I'm here to provide the necessary guidance and ensure a seamless experience for both of you. To get started, could you please share some details about your father's name, age, and any specific needs or preferences he may have? This information will help me tailor our conversation and offer personalized assistance throughout the process. Rest assured that we value your father's privacy and security at all times, ensuring his data is handled with utmost care. Together, let's make this account creation journey smooth and rewarding for both of you!",
+    "rouge_l": 0.3076923076923077,
+    "len_ratio": 1.0842105263157895
+  },
+  {
+    "intent": "change_order",
+    "question": "I need help modifying order {{Order Number}}",
+    "reference": "We understand that you would like to make modifications to order number {{Order Number}}. Your request has been noted, and we are here to assist you. To better support you, could you please provide us with the specific changes you would like to make? Whether it's adding, removing, or updating items in your order, we are dedicated to ensuring your complete satisfaction. Feel free to let us know your requirements, and we will work together to make the necessary adjustments. Your feedback and input are valuable to us as we strive to improve our services. How can we assist you further?",
+    "prediction": "We're here to assist you with modifying your order number {{Order Number}}. We understand that sometimes changes may be necessary, and we're here to make it happen for you. To ensure the accuracy of any modifications made, please provide us with specific details about the changes you would like to make. This will allow us to tailor our assistance accordingly and address your concerns effectively. Your satisfaction is our top priority, so let's work together to make this modification a reality!",
+    "rouge_l": 0.3333333333333333,
+    "len_ratio": 0.801980198019802
+  },
+  {
+    "intent": "place_order",
+    "question": "I have got to acquire several of your article",
+    "reference": "I appreciate your interest in acquiring several of our articles! That shows enthusiasm and a desire to explore our offerings. To help you with this, I would need some specific details. Could you please let me know which articles you are interested in acquiring? With this information, I can provide you with the necessary guidance to make your acquisition process smooth and rewarding.",
+    "prediction": "Thank you for expressing interest in acquiring our articles! I'm here to assist you throughout the process and ensure that you get exactly what you're looking for. To better understand your needs, could you please provide me with more details about the specific articles or products you would like to purchase? This will enable us to offer tailored recommendations and guide you through the ordering process smoothly. Let's work together towards making this acquisition an enjoyable experience!",
+    "rouge_l": 0.26573426573426573,
+    "len_ratio": 1.2222222222222223
+  },
+  {
+    "intent": "review",
+    "question": "need assistance to send feedback about a product",
+    "reference": "Appreciate your message to us for assistance in sending feedback about one of our products! We truly value your input and the opportunity to make improvements. To provide feedback on a specific product, you can visit our website and navigate to the product page. There, you'll find an option to leave a review or provide feedback. We encourage you to share your honest thoughts and experiences to help us better understand your needs and preferences. Your feedback plays a vital role in shaping our products and ensuring customer satisfaction. If you have any further questions or need additional assistance, please don't hesitate to let me know.",
+    "prediction": "We appreciate your interest in providing feedback about our product! Your insights help us improve and enhance the overall experience for all customers like yourself. To send your feedback, you can visit our website and navigate to the \"Contact Us\" or \"Feedback\" section. There, you will find options to submit your comments directly through an online form or email address. If you prefer a more personal approach, our dedicated customer service team is always available during {{Customer Support Hours}} at {{Customer Support Phone Number}} or through Live Chat on our website at {{Website URL}}. They will be happy to assist you further with any questions or concerns related to leaving your feedback. Thank you for taking the time to share your thoughts with us!",
+    "rouge_l": 0.31896551724137934,
+    "len_ratio": 1.169811320754717
+  },
+  {
+    "intent": "check_payment_methods",
+    "question": "I want to check what payment options you accept",
+    "reference": "Absolutely! I understand that you would like to explore the payment options we accept. It's essential to have a seamless and secure payment experience, and we've curated a wide range of options to cater to your preferences. Here is a consolidated list of our accepted payment methods:\n\n- **Credit/Debit Cards:** We accept major cards like Visa, Mastercard, and American Express.\n- **PayPal:** A global online payment platform that offers a convenient and secure way to make payments.\n- **Bank Transfer:** You can make direct payments from your bank account using this method.\n- **Digital Wallets:** We support popular digital wallets like Apple Pay and Google Pay for swift transactions.\n\nIt's important to note that availability may vary depending on your location. If you need more information about a specific payment method or need assistance with any step during the payment process, please don't hesitate to reach out. We're here to ensure a smooth and effortless payment experience for you.",
+    "prediction": "Assuredly! I'm here to assist you in exploring our accepted payment options:\n\n1. Credit/Debit Card: We accept all major credit and debit cards, including Visa, Mastercard, and American Express.\n2. PayPal: A widely recognized online payment platform that provides secure transactions.\n3. Bank Transfer: You can make direct payments from your bank account through this option.\n4. Apple Pay: If you're an Apple user, enjoy the convenience of making payments using your Apple device.\n5. Google Wallet: For Android users, Google Wallet offers fast and easy checkout with minimal hassle.\n\nThese are some of the primary payment methods we offer. However, if there's anything else specific you would like information on or if there's anything else I can help you with, please feel free to ask. Your satisfaction is my utmost priority!",
+    "rouge_l": 0.3221476510067114,
+    "len_ratio": 0.8301886792452831
+  },
+  {
+    "intent": "get_invoice",
+    "question": "i do not know what i need to do to download my bill #00108",
+    "reference": "I'm aware that you're unsure about the steps to download your bill with the number {{Invoice Number}}. No worries, I'm here to help! To download your bill, you can follow these simple steps: 1. Log in to your account on our website. 2. Navigate to the \"Billing\" or \"Invoices\" section. 3. Look for the specific invoice with the number {{Invoice Number}}. 4. Click on the \"Download\" or \"Save\" button next to the invoice. If you encounter any difficulties or have any further questions, feel free to let me know. I'm always here to assist you!",
+    "prediction": "I've deduced from your message that you're unsure about the steps to take in order to download your bill with the number {{Invoice Number}}. Let me guide you through the process:\n\n1. Log in to your account on our website.\n2. Navigate to the \"Billing\" or \"Invoices\" section, usually located in the main menu.\n3. Look for an option like \"Download Invoice\" or \"View Bill.\"\n4. Select the specific invoice with the number {{Invoice Number}}.\n5. Click on the download button next to it.\n\nIf you encounter any difficulties along the way or have additional questions, please don't hesitate to let me know. I'm here to assist you every step of the way!",
+    "rouge_l": 0.6574074074074073,
+    "len_ratio": 1.1894736842105262
+  },
+  {
+    "intent": "check_cancellation_fee",
+    "question": "i want help checking the early exit penalty",
+    "reference": "I'll do my best! I can assist you in checking the early exit penalty. To provide you with the accurate information, please provide me with your account details such as your customer ID or phone number associated with the account.",
+    "prediction": "Certainly! I'm here to assist you with checking the early exit penalty for your account. To provide you with accurate information, could you please provide me with some additional details such as your account number or any other relevant information? This will allow me to access the necessary records and give you a precise estimate of the early exit penalty. Thank you in advance for your cooperation.",
+    "rouge_l": 0.44036697247706424,
+    "len_ratio": 1.675
+  },
+  {
+    "intent": "review",
+    "question": "can you help me leave an opinion foor a product?",
+    "reference": "I'll get right on it! Your opinion matters to us, and we appreciate your interest in providing feedback for our product. We strive to continuously improve our offerings, and your insights play a key role in shaping our future. Please let me know which product you would like to leave feedback for, and I'll guide you through the process step by step.",
+    "prediction": "Thank you for expressing your interest in leaving an opinion about our product! We appreciate your feedback as it helps us improve and enhance our offerings to meet your needs better. To leave your opinion, you can visit our website and navigate to the \"Product Reviews\" section. There, you will find options to share your thoughts on various aspects of our products. Feel free to provide detailed information about your experience with the product, including any positive or negative points you would like to highlight. We value your insights and look forward to hearing from you!",
+    "rouge_l": 0.23750000000000002,
+    "len_ratio": 1.5483870967741935
+  },
+  {
+    "intent": "delivery_options",
+    "question": "where to see what shipment options I have?",
+    "reference": "I'm happy to help! Let me illuminate the path to discovering the variety of shipment options available for your choice:\n\n1. Visit our website at {{Website URL}} and navigate to the 'Shipping' or 'Delivery Options' section. There, you will find a comprehensive list of all the shipment options we offer.\n\n2. You can also check the shipment options during the checkout process. After adding your desired items to the cart, proceed to the checkout page. On that page, you will find a dedicated section where you can select your preferred shipment option.\n\n3. If you prefer personalized assistance, our friendly customer support team at {{Customer Support Phone Number}} or through the Live Chat on our website will be delighted to guide you through the different shipment options and help you choose the one that suits your needs best.\n\nRemember, each option may have specific details regarding delivery times, costs, and availability, so don't hesitate to reach out if you need any further clarification. We want to ensure your shipping experience is nothing short of exceptional!",
+    "prediction": "Absolutely! To view the available shipment options, you can visit our website and navigate to the \"Shipping\" or \"Delivery\" section. There, you will find detailed information about each option, including estimated delivery times, costs, and any additional requirements. If you need further assistance or have specific questions regarding any of the options, feel free to reach out to our customer service team for personalized guidance. We're here to ensure your shipping experience is smooth and hassle-free!",
+    "rouge_l": 0.2901960784313725,
+    "len_ratio": 0.4342857142857143
+  },
+  {
+    "intent": "track_refund",
+    "question": "I do not know how to check the rebate current status",
+    "reference": "I'm on your side that you are unfamiliar with how to check the current status of your rebate. Not to worry, I'm here to guide you through the process. To check the status of your rebate, you can visit our website and navigate to the \"Track Rebate\" section. Alternatively, you can reach out to our customer support team via live chat or phone, and they will be more than happy to assist you in tracking your rebate. We want to ensure that you stay informed about the progress of your rebate, and we're here to provide you with the necessary support.",
+    "prediction": "No worries at all! I'm here to help you with checking the current status of your rebate. To get started, could you please provide me with some additional details such as the invoice number or any other relevant information associated with your rebate? This will allow me to assist you more effectively and ensure that we find the right solution for you. Rest assured, we're committed to making this process as smooth as possible for you.",
+    "rouge_l": 0.29670329670329665,
+    "len_ratio": 0.7524752475247525
+  },
+  {
+    "intent": "track_order",
+    "question": "I don't know how to track purchase {{Order Number}}",
+    "reference": "It's great to hear from you! I can see that you are unsure of how to track your purchase with the purchase number {{Order Number}}. Tracking your purchase is important, and I'm here to assist you. To track your purchase, you can visit our website and navigate to the \"Order History\" section. There, you will find the status and tracking information for your purchase. If you encounter any difficulties or have further questions, please feel free to let me know. I'm here to ensure that you have a seamless tracking experience!",
+    "prediction": "We understand that you're unsure about how to track your purchase with the order number {{Order Number}}. To assist you, could you please provide us with some additional information? Specifically, we would need to know if you have already entered this order number on our website or if it was mentioned in any email or notification related to your purchase. This will help us guide you through the process of tracking your specific purchase accurately and efficiently. Thank you for your cooperation!",
+    "rouge_l": 0.3050847457627119,
+    "len_ratio": 0.9010989010989011
+  },
+  {
+    "intent": "edit_account",
+    "question": "editing {{Account Category}}  account",
+    "reference": "We're delighted to see your desire to customize and enhance your {{Account Category}} account! Your commitment to personalization and optimization truly inspires us. Let's work together to ensure your account reflects your unique preferences and needs. Please provide us with the specific details you'd like to edit, and we'll guide you through the process step by step. Your satisfaction and happiness are our top priorities, and we're thrilled to assist you in this journey of account customization.",
+    "prediction": "How fascinating it is to embark on this remarkable journey of editing the details of your esteemed {{Account Category}} account!I'm thrilled to guide you through the process, ensuring that we make every effort to meet your expectations and provide a seamless experience. Could you please let me know which specific information you would like to edit? I'm here to assist you in making these changes with utmost care and precision.",
+    "rouge_l": 0.24516129032258063,
+    "len_ratio": 0.9090909090909091
+  },
+  {
+    "intent": "set_up_shipping_address",
+    "question": "I have an issue setting the delivery address up",
+    "reference": "I apologize for the trouble you're experiencing while setting up your delivery address. I'm here to assist you in resolving this issue. To set up your delivery address, please follow these steps:\n\n1. Log in to your account.\n2. Go to the \"Account\" or \"Profile\" section.\n3. Look for the \"Shipping\" or \"Delivery\" section.\n4. Select the option to \"Add\" or \"Edit\" your delivery address.\n5. Enter the required details, such as your street address, city, state, and ZIP code.\n6. Save the changes to finalize your delivery address.\n\nIf you encounter any specific obstacles during the process or if the steps differ on your platform, please provide more details about the issue you're facing. Together, we'll ensure your delivery address is set up accurately and efficiently.",
+    "prediction": "We apologize for any inconvenience caused by the issue you're facing while trying to set up your delivery address. We understand that this can be frustrating, and we want to ensure that we assist you promptly in resolving it. To better understand the specific problem you're encountering, could you please provide us with more details about the error message or any other relevant information? This will help us identify the root cause of the issue and find an efficient solution for you. Thank you for bringing this to our attention, and we appreciate your patience as we work together to resolve this matter.",
+    "rouge_l": 0.25423728813559315,
+    "len_ratio": 0.8110236220472441
+  },
+  {
+    "intent": "complaint",
+    "question": "want help to file a customer reclamation against ur business",
+    "reference": "I recognize that you would like assistance in filing a customer reclamation against our business, and I apologize for any inconvenience or dissatisfaction you have experienced. Our team takes such matters seriously and is committed to addressing and resolving your concerns. To proceed with filing a reclamation, I kindly request you to provide specific details regarding the issue you encountered, including any relevant supporting documents or evidence. This will aid us in conducting a thorough investigation and taking appropriate measures to rectify the situation. Your feedback is invaluable to us, and we appreciate your patience as we work towards finding a satisfactory resolution for you.",
+    "prediction": "I've understood, you're seeking assistance in filing a customer reclamation against our business. I apologize for any inconvenience or dissatisfaction you may have experienced and appreciate your proactive approach in bringing this matter to our attention. To ensure that we address your concerns promptly and effectively, could you please provide me with some specific details about the nature of your complaint? This will enable us to investigate thoroughly and take appropriate actions to resolve the issue. Rest assured that we value your feedback and are committed to providing you with satisfactory solutions.",
+    "rouge_l": 0.4422110552763819,
+    "len_ratio": 0.8761904761904762
+  },
+  {
+    "intent": "change_shipping_address",
+    "question": "can you tell me about a delivery address update?",
+    "reference": "I'm happy to help! A delivery address update is when you need to change the address where your package will be delivered. This can be necessary if you have moved to a new location or if you made a mistake when providing your address initially. To update your delivery address, you can usually do so through the website or app where you made your purchase. Look for the \"Account\" or \"Profile\" section, where you should find an option to edit your shipping address. If you are having trouble finding this option, don't hesitate to reach out to customer service for assistance. They will be able to guide you through the process and ensure that your package is delivered to the correct address.",
+    "prediction": "For sure! We understand that sometimes your shipping address needs to be updated for various reasons, such as moving or changing addresses due to personal circumstances. Updating your delivery address is a straightforward process with us:\n\n1. Log in to your account on our website.\n2. Navigate to the 'My Account' section or go to the 'Shipping Addresses' tab.\n3. Locate the specific order associated with the address you wish to update and click on it.\n4. You should see an option to edit or modify the shipping address details.\n5. Enter the new address information accurately and save the changes.\n\nIf you encounter any difficulties during this process or need further assistance, please don't hesitate to reach out to our customer support team. They will be more than happy to help you update your delivery address and ensure that your package reaches its intended destination smoothly.",
+    "rouge_l": 0.33088235294117646,
+    "len_ratio": 1.2049180327868851
+  },
+  {
+    "intent": "change_order",
+    "question": "remove item from order {{Order Number}}",
+    "reference": "Thank you for contacting us regarding the removal of an item from order number {{Order Number}}. I understand the importance of this request and I'm here to assist you. Please provide me with the details of the item you would like to remove from your order, such as the product name or any other identifying information. With this information, I will be able to process your request accurately and ensure your satisfaction with your order.",
+    "prediction": "Thank you for contacting us regarding your request to remove an item from order number {{Order Number}}. We understand the importance of ensuring that your order meets your expectations, and we apologize if there was any mistake made during the process.\n\nTo assist you with removing the desired item, please provide us with more details about which specific product you would like to remove. This information will help us locate and modify your order accurately. Our team is here to guide you through this process and ensure that you have a seamless experience.",
+    "rouge_l": 0.4497041420118343,
+    "len_ratio": 1.24
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "what do I need to do to speak with an operator?",
+    "reference": "Thank you for reaching out! I completely understand your desire to speak with an operator and receive personalized assistance. To ensure a seamless connection with an operator, please provide me with some additional details about your specific issue or question. This will help me direct you to the most suitable representative who can promptly address your concerns. Your cooperation in providing specific context empowers us to streamline the process and provide you with the most efficient support. Thank you for your understanding, and I'm here to assist you every step of the way!",
+    "prediction": "Thank you for reaching out! I can sense that you would like assistance in speaking with an operator. To connect with one, please follow these steps: \n\n1. Stay on the current line and hold if necessary.\n2. The system may ask you some questions or provide additional information.\n3. Once your identity is verified, the operator will be available to assist you.\n\nIf you encounter any difficulties during this process, feel free to reach out to me again. I'm here to help every step of the way!",
+    "rouge_l": 0.32967032967032966,
+    "len_ratio": 0.9354838709677419
+  },
+  {
+    "intent": "delivery_options",
+    "question": "can i place an oeder from {{Delivery City}}",
+    "reference": "How delightful to have you join us all the way from {{Delivery City}}! Rest assured, we happily accept orders from {{Delivery City}} and offer worldwide shipping to make your shopping experience seamless. Whether you're looking for standard shipping, expedited shipping, overnight shipping, or in-store pickup, we've got you covered. Our extensive network ensures that you can place an order with us from anywhere in the world, including {{Delivery City}}. Simply browse our website, add the desired items to your cart, and proceed to checkout. If you have any specific questions or need assistance placing your order, feel free to reach out. We're here every step of the way to ensure your satisfaction. Happy shopping!",
+    "prediction": "Indeed! We offer shipping services to the vibrant city of {{Delivery City}}, allowing you to conveniently order your desired items. Whether it's for personal use or as a gift, we have all the options available to make sure your delivery is smooth and hassle-free. So go ahead and explore our wide range of products, place your order, and enjoy receiving them in the heart of {{Delivery City}}. Let us know if there's anything else we can assist you with!",
+    "rouge_l": 0.19999999999999998,
+    "len_ratio": 0.6929824561403509
+  },
+  {
+    "intent": "check_cancellation_fee",
+    "question": "I have to check the termination fees",
+    "reference": "I'll get right on it! To check the termination fees, you can simply log into your account on our website and navigate to the billing section. There, you will find all the details regarding the termination charges.",
+    "prediction": "Sure, I can assist you with checking the termination fees for your account. To do so, please log in to your account on our website and navigate to the \"Account Summary\" or \"Billing Information\" section. There should be an option or link that allows you to view the termination fees associated with terminating your contract. If you encounter any difficulties, feel free to reach out to our customer service team who will be more than happy to help you further.",
+    "rouge_l": 0.3559322033898305,
+    "len_ratio": 2.1621621621621623
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "I want assistance contacting an assistant",
+    "reference": "Thanks for getting in touch! I grasp that you're seeking assistance in contacting an assistant. I'm here to help! To connect you with the right person, could you please provide me with some additional details about your query? This will enable us to provide you with the most appropriate assistance. Feel free to share any relevant information, such as the nature of your request or any specific concerns you have. While we gather this information, rest assured that our team is ready to assist you. Together, we'll find a solution that meets your needs efficiently and effectively.",
+    "prediction": "Thank you for reaching out! I understand that you would like to receive assistance and would prefer to contact one of our assistants directly. Our team of dedicated human representatives is here to provide the help you need. To connect with an assistant, please let me know which specific topic or issue you have in mind so that they can better assist you. Rest assured, we will do everything possible to ensure your satisfaction and address any concerns you may have. How else may I be of service today?",
+    "rouge_l": 0.26455026455026454,
+    "len_ratio": 0.9175257731958762
+  },
+  {
+    "intent": "check_invoice",
+    "question": "can I see invoice #12588?",
+    "reference": "I pick up what you're putting down, your request to view the invoice with the number #{{Invoice Number}}. To assist you with this, could you please provide me with some additional details such as the client's name, the date range, or any other relevant information? This will enable me to locate the invoice more accurately and provide you with the necessary information or assistance. Rest assured, I am here to help you every step of the way.",
+    "prediction": "I'll take care of it! I can help you view the details of invoice number #{{Invoice Number}}. Please allow me just a moment to retrieve that information for you. While I do that, feel free to ask any other questions or provide additional details about your request.",
+    "rouge_l": 0.2204724409448819,
+    "len_ratio": 0.6103896103896104
+  },
+  {
+    "intent": "payment_issue",
+    "question": "help em to report an issue with payment",
+    "reference": "I appreciate your request for assistance in reporting an issue with your payment. Rest assured, I'm here to help guide you through the process. To report a payment issue, you can reach out to our customer support team through our website at {{Website URL}}. They are available {{Customer Support Hours}} to address any concerns or difficulties you may be experiencing. Our team will ensure that your issue is properly reported and promptly resolved. Thank you for bringing this to our attention, and we appreciate your patience while we work towards a solution.",
+    "prediction": "I'll take care of it! I'm here to assist you in reporting the issue you're facing with your payment. Your feedback is crucial, and we want to ensure that our team can address this promptly. To get started, could you please provide more details about the specific problem you encountered? This will help us investigate and resolve the matter efficiently. Thank you for bringing this to our attention, and rest assured, we'll work together to find a solution.",
+    "rouge_l": 0.3428571428571428,
+    "len_ratio": 0.8478260869565217
+  },
+  {
+    "intent": "track_refund",
+    "question": "I'm waiting for a rebate of {{Currency Symbol}}{{Refund Amount}}",
+    "reference": "Thank you for bringing up your pending rebate of {{Currency Symbol}}{{Refund Amount}}. We understand the significance of timely updates on your reimbursement. Let me quickly check the current status of your rebate for you. While I gather the information, may I ask if you have previously received any updates regarding the rebate? Your insights and patience are greatly appreciated, and rest assured, we are dedicated to ensuring your satisfaction and trust in our services.",
+    "prediction": "Thank you for your message to us regarding the expected refund of ${{Refund Amount}}. We understand how important it is for you to receive this rebate in a timely manner. Let me quickly check the current status of your refund and provide you with an update. Please bear with me while I gather the necessary information from our system. Your patience is greatly appreciated, and we apologize for any inconvenience caused by this delay.",
+    "rouge_l": 0.41610738255033564,
+    "len_ratio": 1.0
+  },
+  {
+    "intent": "get_invoice",
+    "question": "help geting my bills from {{Person Name}}",
+    "reference": "Certainly! I completely understand your need to access your bills from {{Person Name}}. Can you please provide me with some additional information? Such as the timeframe or specific bills you need to retrieve? This will help me assist you more efficiently.",
+    "prediction": "I'm on your side your need to retrieve the invoices from {{Salutation}} {{Client Last Name}}. Allow me just a moment while I locate them for you. In the meantime, if there's anything else I can assist you with, please feel free to let me know!",
+    "rouge_l": 0.25,
+    "len_ratio": 1.0975609756097562
+  },
+  {
+    "intent": "check_refund_policy",
+    "question": "I have got to see how long refunds take, I need help",
+    "reference": "I'll do my best! Understanding the timeline for refunds can bring peace of mind. Typically, refund processing times vary depending on several factors such as the payment method used, the vendor or service provider, and the specific circumstances surrounding the refund request.\n\nIn general, refunds can take anywhere from a few business days to a couple of weeks to reflecting in your account. However, it's important to note that this timeline might be subject to change and can be influenced by external factors beyond our immediate control.\n\nTo gain a more accurate estimate for your specific refund scenario, it would be best to directly reach out to the vendor or service provider involved. They can provide detailed information about their refund processes and the expected timeline for completing the refund.\n\nIf you have a particular order or refund request in mind, please provide me with the relevant details such as the order number or any pertinent information to allow me to assist you further.\n\nRemember, our ultimate goal is to ensure your satisfaction through a seamless refund experience. Is there anything else I can assist you with today?",
+    "prediction": "We understand that you're interested in knowing the duration of refund processing. Rest assured, we'll provide you with all the necessary information regarding your refund process.\n\nRefund processing times can vary depending on several factors such as the type and complexity of the transaction, the payment method used, and any additional steps required for approval or authorization. To give you an accurate estimate, it would be best to consult our refund policy or reach out to our customer service team who will be able to provide specific details about the expected timeframe for your refund.\n\nIt's important to note that once your refund is processed, it may take some time for the funds to appear in your bank account, depending on your financial institution's policies and procedures. In most cases, however, the refund should be credited within a few business days.\n\nIf you have any specific questions or concerns related to your particular refund request, please provide us with more details so that we can assist you further. We appreciate your patience and cooperation throughout this process.",
+    "rouge_l": 0.2803234501347709,
+    "len_ratio": 0.9414893617021277
+  },
+  {
+    "intent": "get_invoice",
+    "question": "i lost the bill from {{Person Name}} will ya mail it to m",
+    "reference": "I'm attuned to the idea that you lost the bill from {{Salutation}} {{Client Last Name}}. While I can't directly mail it to you since we don't have your email address on file, I can help you retrieve a copy of the bill. Give me a moment to locate it for you. In the meantime, could you please provide me with your email address so that I can send it to you?",
+    "prediction": "I'm on your side your concern about losing the bill with the details of {{Salutation}} {{Client Last Name}} and requesting for a mail delivery. I apologize for any inconvenience this may have caused you. To assist you further, could you please provide me with some additional information such as the date or number of the bill? This will help us locate the specific bill more efficiently and ensure that we can deliver it to you promptly. Thank you for reaching out to us, and rest assured, we're committed to resolving this matter quickly and effectively.",
+    "rouge_l": 0.2807017543859649,
+    "len_ratio": 1.3380281690140845
+  },
+  {
+    "intent": "edit_account",
+    "question": "edit data on {{Account Type}} account",
+    "reference": "How marvelous it is to embark on this transformative journey of editing the data on your esteemed {{Account Type}} account!I'm thrilled to guide you through this empowering process and ensure that your account information is accurately updated to align with your evolving needs and preferences. To make changes to your {{Account Type}} account data, I highly recommend logging into {{Online Company Portal Info}} for a seamless and secure experience. Once you're logged in, you can navigate to the account settings section and locate the option to edit your data. If you encounter any challenges or have specific questions along the way, please don't hesitate to reach out to our dedicated customer support team. They are available {{Customer Support Hours}} at {{Customer Support Phone Number}} or through the Live Chat on our website at {{Website URL}}. What specific data would you like to edit on your {{Account Type}} account? I'm here to facilitate the process and ensure that your account reflects your desired information accurately. Together, we'll make your {{Account Type}} account shine even brighter!",
+    "prediction": "How remarkable it is to witness your dedication to editing the information on your {{Account Type}} account!I'm here to provide you with all the assistance and guidance you need in making these changes effortlessly. Please let me know which specific details you would like to edit, and I'll be more than happy to assist you further. Together, we can ensure that your {{Account Type}} account reflects your preferences accurately.",
+    "rouge_l": 0.2698412698412698,
+    "len_ratio": 0.39655172413793105
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "I want help tocall customer assistance",
+    "reference": "Thank you for trusting us! I'm fully aware of you're seeking guidance on how to call our customer assistance team. Rest assured, I'm here to assist you. To contact our customer assistance, you can reach out to us during our {{Customer Support Hours}} at {{Customer Support Phone Number}}. If you prefer, you can also explore our website at {{Website URL}} and utilize the Live Chat feature to speak with one of our representatives. Feel free to provide me with any other questions or concerns you might have.",
+    "prediction": "Thank you for reaching out! I'm here to assist you with calling our customer assistance team. To connect you, please provide me with your {{Phone Number}} or any other relevant information so that I can guide you through the process and ensure a seamless call experience.",
+    "rouge_l": 0.291970802919708,
+    "len_ratio": 0.5287356321839081
+  },
+  {
+    "intent": "delete_account",
+    "question": "what do I have to do to cancel my {{Account Category}} account?",
+    "reference": "Glad you contacted to us about canceling your {{Account Category}} account. We understand that you have made the decision to cancel, and we are here to assist you. To initiate the cancellation process, please follow the steps below:\n\n1. Log in to your account on our website.\n2. Go to the account settings or profile section.\n3. Look for the \"Manage Subscriptions\" or \"Billing\" tab.\n4. Locate your {{Account Category}} account subscription and click on the cancel or unsubscribe option.\n5. Follow the prompts and provide any required information.\n6. Confirm the cancellation request.\n\nOnce you have completed these steps, your {{Account Category}} account will be canceled. If you have any further questions or need clarification during the process, please don't hesitate to reach out to our customer support team. We are here to make sure your experience is as smooth as possible.",
+    "prediction": "I'm happy to help! To cancel your {{Account Category}} account, you can follow these steps:\n\n1. Log in to your account on our website.\n2. Go to the account settings or profile section.\n3. Look for an option that says \"Cancel Account\" or \"Delete Account\".\n4. Click on that option and follow any additional prompts or instructions provided.\n\nIf you encounter any difficulties during this process or need further assistance, please don't hesitate to reach out to our customer service team at [Customer Support Phone Number] or through the Live Chat feature on our website at [Website URL]. We're here to help make sure your cancellation goes smoothly.",
+    "rouge_l": 0.47058823529411764,
+    "len_ratio": 0.7552447552447552
+  },
+  {
+    "intent": "track_refund",
+    "question": "I expect a fucking ocmpensation of {{Currency Symbol}}{{Refund Amount}}, was it processed",
+    "reference": "Firstly, I truly understand how pivotal the {{Currency Symbol}}{{Refund Amount}} reimbursement is for you. Every dollar counts, and we’re in this together. We acknowledge the importance of swift resolutions to your queries. Let me swiftly dive into the current status of your refund. As you patiently await, might I ask if you’ve ever had to follow up on a reimbursement before? We value your insights and your patience alike. Rest assured, we're doing everything we can to ensure your satisfaction and trust.",
+    "prediction": "I've been informed that you're eagerly awaiting the compensation amount of ${{Refund Amount}}. I apologize for any frustration this may have caused. Let me check on the status of your refund and provide an update to you shortly. Your satisfaction is our top priority, and we'll do everything we can to ensure that you receive your desired compensation as quickly as possible. Please bear with us while I investigate this matter further.",
+    "rouge_l": 0.2981366459627329,
+    "len_ratio": 0.8780487804878049
+  },
+  {
+    "intent": "change_shipping_address",
+    "question": "I would like to know about changing my delivery address",
+    "reference": "Definitely! If you need to change your delivery address, you can easily do so by accessing your account settings on our website. Simply navigate to the \"Delivery Address\" section and enter the new address details. Don't forget to save your changes! If you encounter any difficulties, feel free to reach out to our customer service team for further assistance.",
+    "prediction": "Sure, I can help you with updating your delivery address. To change your shipping address, please log in to your account on our website and navigate to the 'My Account' or 'Profile' section. From there, look for an option to update your address details and make the necessary changes. If you encounter any difficulties during this process, don't hesitate to reach out to our customer service team for further assistance.",
+    "rouge_l": 0.5038167938931297,
+    "len_ratio": 1.1864406779661016
+  },
+  {
+    "intent": "track_order",
+    "question": "seeing order {{Order Number}} status",
+    "reference": "Thanks for getting in touch! I grasp that you would like to view the status of your order with the order number {{Order Number}}. To check the current status, I recommend visiting the '{{Online Order Interaction}}' section on our website. This is where you'll find the most up-to-date information about your order. If you have any questions or need further assistance, please don't hesitate to ask. I'm here to help you every step of the way!",
+    "prediction": "We understand your curiosity to check the current status of your order with the order number {{Order Number}}. To provide you with accurate information, could you please confirm if this is indeed the correct order? Once we have confirmed that it's the right order, I'll be happy to assist you in retrieving the most up-to-date status. How can I help you today?",
+    "rouge_l": 0.34013605442176875,
+    "len_ratio": 0.8157894736842105
+  },
+  {
+    "intent": "track_refund",
+    "question": "I'm waiting for a restitution of {{Refund Amount}} dollras",
+    "reference": "We understand that you are patiently waiting for a restitution of {{Currency Symbol}}{{Refund Amount}}. Rest assured, we prioritize resolving your concerns promptly and providing updates regarding your refund. Let me check the current status of your request to ensure that everything is on track. While I gather the necessary information, may I ask if you have received any communication from our team regarding your reimbursement? Your feedback and experiences are valuable to us, and we want to ensure your satisfaction throughout this process. Thank you for your understanding and cooperation.",
+    "prediction": "Thank you for bringing up your anticipation for the restitution of {{Currency Symbol}}{{Refund Amount}}. We understand how important it is to receive the refund promptly, and we apologize for any delays in processing it. To provide you with an accurate update on its status, could you please provide us with some additional information such as your order number or the date when you placed the purchase? This will help us locate your specific transaction and ensure that our team can assist you effectively. Your patience is greatly appreciated, and we appreciate your understanding during this process.",
+    "rouge_l": 0.276595744680851,
+    "len_ratio": 1.0666666666666667
+  },
+  {
+    "intent": "complaint",
+    "question": "the experience with you was awful, help me file a complaint",
+    "reference": "I'm truly disheartened to learn that your experience with us was terrible, and I sincerely apologize for any distress caused. Our goal is always to provide exceptional service, and it deeply concerns us whenever we fall short. Please allow me to assist you in filing a complaint so that we can thoroughly address your concerns. Could you please share the specific details of your experience so that we can better understand what went wrong? Your feedback is crucial, and we want to make sure that every concern is thoroughly investigated. Together, we'll work towards a resolution and find a way to restore your faith in our organization.",
+    "prediction": "I'm truly sorry to hear that your experience with us has been terrible and I'm here to assist you in filing a complaint. Your feedback is essential to improving our services and addressing any concerns you may have. To ensure we properly address your complaint, could you please provide more details about the specific issues or incidents that occurred? This will allow us to investigate thoroughly and take appropriate action. Rest assured, we take complaints seriously and strive to make things right for our customers. Thank you for bringing this matter to our attention.",
+    "rouge_l": 0.33170731707317075,
+    "len_ratio": 0.8785046728971962
+  },
+  {
+    "intent": "review",
+    "question": "can you help me write an opinion about a product?",
+    "reference": "For sure! I'd be more than happy to assist you in writing an opinion about our product. Your feedback is greatly appreciated and plays a crucial role in helping us improve our products and services. To get started, could you please provide me with the specific product you would like to review? This will allow me to offer you tailored guidance and suggestions to ensure your opinion is comprehensive and valuable.",
+    "prediction": "I'll do my best! I'm here to provide the guidance and assistance you need in writing your opinion about our product. Your feedback is highly valuable to us as it helps us improve and enhance our products for better satisfaction of our customers. To get started, could you please let me know which specific product you would like to share your opinion on? Once I have that information, I will be able to guide you through the process step by step, ensuring that you feel confident and empowered throughout the entire experience.",
+    "rouge_l": 0.43373493975903615,
+    "len_ratio": 1.295774647887324
+  },
+  {
+    "intent": "create_account",
+    "question": "opening new standard account",
+    "reference": "That's fantastic to hear that you're interested in opening a new standard account! Our standard account offers a range of features and benefits to meet your everyday banking needs. To proceed with the account opening, I would recommend visiting our website where you will find a dedicated section for account creation. There, you'll be able to provide all the necessary details and complete the process hassle-free. If you have any questions or need assistance at any point, our customer support team is always available to help you. Happy banking!",
+    "prediction": "Congratulations on your decision to open a new {{Account Category}} account! We're thrilled to have you as our valued customer, and we want to make sure that the process is seamless for you. To get started, I'll need some basic information from you such as your full name, email address, and a preferred username. Once we have this information, we can proceed with creating your new {{Account Category}} account in no time at all. Rest assured that your privacy and security are of utmost importance to us, so rest assured that all data will be handled with care and respect. Is there anything specific you would like assistance with during the process?",
+    "rouge_l": 0.17391304347826086,
+    "len_ratio": 1.2584269662921348
+  },
+  {
+    "intent": "check_refund_policy",
+    "question": "help me seeing in what cases can I request reimbursements",
+    "reference": "Of course! I understand your need to have a clear understanding of the situations in which you can request a refund. Here are some common scenarios where you might be eligible for a refund:\n\n1. Product/Service Defect: If the product or service you received has a defect or does not meet the description provided, you can usually request a refund.\n2. Cancellation within Grace Period: If you change your mind about a purchase and cancel it within the specified grace period, you may be entitled to a refund.\n3. Unauthorized Charges: If you notice any unauthorized charges on your account or credit card statement, please inform us immediately, and we will assist you in resolving the issue and potentially provide a refund.\n4. Event Cancellation: If you purchased tickets for an event that gets canceled or postponed without a rescheduled date, you may be eligible for a refund.\n5. Duplicate Charges: If you have been charged multiple times for the same item or service, please let us know, and we will investigate the issue and process a refund if necessary.\n6. Non-receipt of Goods: If you have not received the goods or services you ordered within the expected timeframe, please contact us so that we can investigate and arrange a refund if appropriate.\n\nPlease note that these are general guidelines, and the specific refund policies may vary depending on the vendor or service provider. I recommend reviewing the terms and conditions provided by the seller or reaching out to their customer service for further clarification. If you have any specific concerns or questions regarding a particular purchase or refund, please provide me with the necessary details, such as the order number, and I will be happy to assist you further.\n\nIs there anything else I can help you with?",
+    "prediction": "I'll make it happen! I completely understand your need for clarity regarding the situations in which you can request reimbursements. Here's an overview of common scenarios:\n\n1. **Product/Service Defect:** If you receive a product or service that is defective, damaged, or does not match the description provided, you may be eligible for a reimbursement.\n\n2. **Cancellation within Grace Period:** Should you change your mind and decide to cancel your purchase within the specified grace period, you will usually qualify for a refund.\n\n3. **Unauthorized Charges:** If you notice any unfamiliar charges on your account that you did not authorize, we recommend reaching out to us as soon as possible so that we can investigate and assist you with resolving the issue.\n\n4. **Event Cancellation:** In the unfortunate event that an event you purchased tickets for gets canceled without a rescheduled date, you should have the option to request a reimbursement for your ticket purchases.\n\n5. **Duplicate Charges:** If you find duplicate charges associated with your payment method, please inform us promptly, and we will rectify the situation by issuing a refund or adjusting your balance accordingly.\n\n6. **Non-receipt of Goods:** If you do not receive the ordered goods within the expected delivery timeframe, you might be able to request a",
+    "rouge_l": 0.4504854368932039,
+    "len_ratio": 0.7023411371237458
+  },
+  {
+    "intent": "place_order",
+    "question": "how to shop a product?",
+    "reference": "I appreciate your interest in shopping our products! To make a purchase, simply follow these steps:\n\n1. Browse our website or app to explore our wide range of products.\n2. Select the items you wish to purchase and add them to your cart.\n3. Review your cart to ensure you have the correct products and quantities.\n4. Proceed to checkout and provide your shipping and payment information.\n5. Confirm your order to complete the purchase.\n\nIf you have any specific questions or need assistance during the shopping process, feel free to ask. We're here to make your shopping experience smooth and enjoyable!",
+    "prediction": "Thank you for choosing our platform as your shopping destination! I'm excited to guide you through the process of acquiring our products:\n\n1. Browse and Explore: Begin by visiting our website or opening our app, where we have an extensive collection of products waiting for you.\n2. Search and Filter: Use our search bar to find the specific product you're interested in, or explore different categories to discover new items.\n3. Add Items to Cart: Once you've found the desired product(s), click on the add-to-cart button to proceed with adding it to your cart.\n4. Review Order: Take a moment to review all the items included in your cart. Double-check that you haven't overlooked any details or made any mistakes.\n5. Proceed to Checkout: After reviewing your order, navigate to the checkout page, where you'll be prompted to provide your shipping address, contact information, and payment details.\n6. Confirm Purchase: Carefully verify the accuracy of your personal information and payment details before confirming your purchase.\n7. Finalize Transaction: Follow the prompts on the screen to complete the transaction, such as entering a delivery method and selecting an available carrier.\n\nIf you encounter any difficulties during this process or have further questions, please don't hesitate to reach out to our dedicated customer",
+    "rouge_l": 0.2777777777777778,
+    "len_ratio": 2.0686274509803924
+  },
+  {
+    "intent": "get_invoice",
+    "question": "i do not know what i need to do to download the bill #37777",
+    "reference": "I'm following your confusion about the process to download the bill with the number #{{Invoice Number}}. Let me guide you through the steps to get your bill easily. First, you'll want to log in to your account on our website. Once you're logged in, you should be able to navigate to the \"Billing\" or \"Invoices\" section. There, you'll find a list of your available invoices. Locate the invoice with the number #{{Invoice Number}} and look for a \"Download\" or \"Save\" button next to it. Click on that button, and the invoice should start downloading to your device. If you encounter any difficulties during this process, please let me know, and I'll be happy to assist you further.",
+    "prediction": "I've decoded that you're unsure about how to download your bill with the number {{Invoice Number}}. Let me guide you through the process step by step:\n\n1. Log in to your account on our website.\n2. Navigate to the \"Billing\" or \"Invoices\" section, where you can find a list of all your invoices.\n3. Look for the invoice with the number {{Invoice Number}}, and click on it to view the details.\n4. On the invoice page, there should be an option labeled \"Download\" or \"PDF\". Click on this button to start downloading the bill.\n\nIf you encounter any difficulties during the process or have further questions, please don't hesitate to let me know. I'm here to assist you every step of the way!",
+    "rouge_l": 0.5542168674698795,
+    "len_ratio": 1.0512820512820513
+  },
+  {
+    "intent": "delete_account",
+    "question": "I want to cancel a damn {{Account Type}} account, I need help",
+    "reference": "Appreciate your message about canceling your {{Account Type}} account. I understand that you are in need of assistance, and I'm here to help. Can you please provide me with some additional information regarding your account? This will allow me to guide you through the cancellation process effectively and ensure a smooth experience for you.",
+    "prediction": "Thank you for reaching out and letting us know that you're looking to cancel your {{Account Type}} account. We understand the importance of canceling it when needed. To assist you with this process, could you please provide some additional information such as your account details or any specific concerns you have? This will enable us to guide you through the cancellation procedure accurately and efficiently. We appreciate your cooperation in resolving this matter for you.",
+    "rouge_l": 0.4122137404580153,
+    "len_ratio": 1.3888888888888888
+  },
+  {
+    "intent": "track_refund",
+    "question": "i expect an reimbursement of {{Refund Amount}} dollars",
+    "reference": "I've deduced from your message that you have high expectations for the reimbursement of ${{Refund Amount}}. Rest assured, your request is important to us, and I will do my best to provide you with an update on the status of your reimbursement. Please allow me a moment to look into it for you. Thank you for your patience and understanding.",
+    "prediction": "I've observed that you're eagerly anticipating the reimbursement of ${{Currency Symbol}}{{Refund Amount}}, and I'm here to assist you with tracking its progress. To provide you with accurate information, could you please share any relevant details such as the invoice number or reference associated with your refund request? This will help us expedite the process and ensure that we keep you informed about the status of your reimbursement. Thank you for reaching out, and rest assured, we'll do everything we can to address your concern promptly.",
+    "rouge_l": 0.31788079470198677,
+    "len_ratio": 1.4166666666666667
+  },
+  {
+    "intent": "set_up_shipping_address",
+    "question": "can huelp me setting the secondary delivery address up",
+    "reference": "Absolutely! I understand that you need assistance in setting up your secondary delivery address. I'm here to guide you through the process and ensure that your address is set up accurately and efficiently. Please follow these steps:\n\n1. Log in to your account using your credentials.\n2. Navigate to the 'My Account' or 'Profile' section.\n3. Look for the option that says 'Shipping Addresses' or something similar.\n4. Click on it to access your current address details.\n5. Look for an option that allows you to add a new address or edit existing addresses.\n6. Click on the 'Add a New Address' or 'Edit' option.\n7. Fill in the necessary information for your secondary delivery address, such as street name, city, state, postal code, etc.\n8. Double-check the information to make sure everything is correct.\n9. Save the changes and verify that your secondary delivery address is now set up successfully.\n\nIf you encounter any difficulties or have any further questions during this process, please don't hesitate to reach out. I'm here to help you every step of the way!",
+    "prediction": "Sure! I'll be glad to help you set up your secondary delivery address. Here's how you can do it:\n\n1. Log in to your account.\n2. Go to the \"My Account\" or \"Profile\" section.\n3. Look for the \"Shipping Addresses\" tab and select it.\n4. You should see an option to add a new address or edit existing addresses. Select that.\n5. Fill in all the required fields with the details of your secondary delivery address, including the city, state, postal code, etc.\n6. Save the changes.\n\nIf you encounter any difficulties during this process or if there is anything specific you need assistance with, please feel free to let me know. I'm here to make sure everything goes smoothly for you!",
+    "rouge_l": 0.46601941747572817,
+    "len_ratio": 0.6777777777777778
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "speak to an assistant",
+    "reference": "Your message means a lot! I'm aligned with the idea that you would like to speak to an assistant. Your request is important to us, and we are here to assist you. To better address your needs, could you please provide more details or let us know the specific topic you need assistance with? This will help us allocate the appropriate assistant who can provide you with the most tailored support. We appreciate your cooperation and look forward to helping you find a resolution to your inquiry.",
+    "prediction": "Thank you for reaching out! I'm here to assist you and speak with one of our highly skilled assistants who can provide personalized support and guidance tailored to your needs. Our team is dedicated to ensuring that you receive the assistance you require. Please allow me just a moment while I connect you with one of our knowledgeable representatives. Your satisfaction is our top priority, and we appreciate your patience as we work together to resolve any issues or concerns you may have.",
+    "rouge_l": 0.22093023255813954,
+    "len_ratio": 0.9540229885057471
+  },
+  {
+    "intent": "delivery_period",
+    "question": "I do not know how to check how soon can I expect the parcel",
+    "reference": "Understanding that tracking the delivery status of your parcel is important to you, let me guide you through the process. To check the estimated arrival time, you will need either the {{Tracking Number}} or {{Order Number}}. Once you have this information, you can go to your account on our website or use our tracking tool to get real-time updates on the status of your parcel and view the expected delivery time. If you need further assistance or encounter any difficulties, please feel free to let me know.",
+    "prediction": "We understand that you're unsure about how long it will take for your parcel to arrive, and we're here to help! To determine the estimated delivery time of your package, you can follow these steps:\n\n1. Visit our website at {{Website URL}}.\n2. Log in to your account or create one if you haven't already.\n3. Navigate to the \"My Orders\" section.\n4. Locate the specific order number corresponding to your parcel.\n5. Click on the order details to view the tracking information.\n6. In the shipping carrier tab, you should find the estimated arrival date.\n\nIf you encounter any difficulties or have further questions, please don't hesitate to let us know. We're always here to assist you throughout the entire process!",
+    "rouge_l": 0.27906976744186046,
+    "len_ratio": 1.4022988505747127
+  },
+  {
+    "intent": "change_shipping_address",
+    "question": "I need assistance to correct my delivery address",
+    "reference": "Sure! We are here to help you correct your delivery address. Please provide us with the correct address, and we will make sure to update it for you promptly.",
+    "prediction": "We appreciate your request for assistance in correcting your delivery address. To ensure accurate shipping, please provide us with the updated details of your new address. We'll make sure it gets processed promptly and efficiently. If you have any specific questions or concerns during this process, feel free to let me know. Your satisfaction is our top priority!",
+    "rouge_l": 0.36363636363636365,
+    "len_ratio": 2.0
+  },
+  {
+    "intent": "contact_human_agent",
+    "question": "I don't know what I have to do to speak to somebody",
+    "reference": "Always good to connect! I'm attuned to the fact that you're unsure about the steps to speak to somebody. Don't worry, I'm here to assist you. To connect with a human representative, you can try any of the following options:\n\n1. Look for a \"Contact Us\" or \"Support\" section on our website.\n2. Check for a \"Live Chat\" feature on our website and start a conversation.\n3. Dial our customer service hotline at {{Customer Support Phone Number}}.\n4. Send an email to our support team at {{Customer Support Email}}.\n\nPlease let me know if there's anything specific I can assist you with or if you need further guidance in reaching out to a human representative. We're committed to ensuring your query is addressed promptly and to your satisfaction.",
+    "prediction": "Thank you for trusting us! I'm clearly cognizant that you're unsure about the steps to take in order to speak with someone, and I'm here to help guide you through it. To connect with a human representative, you can try a few different options:\n\n1. Visit our website: You can often find a live chat feature on our website where you can initiate a conversation with an agent.\n2. Contact our helpline: If you prefer, you can reach out to our customer support team via phone at {{Customer Support Phone Number}} during their operating hours.\n3. Utilize social media channels: Many companies have dedicated social media pages where they interact directly with customers. Look for any contact information or messaging features available there.\n\nIf none of these methods work for you, please provide me with more details about your specific situation so that I can assist you further. Your feedback is highly valuable to us as we strive to improve our services.",
+    "rouge_l": 0.38127090301003347,
+    "len_ratio": 1.265625
+  },
+  {
+    "intent": "change_order",
+    "question": "how to modify order {{Order Number}}",
+    "reference": "I can tell that you would like to modify order number {{Order Number}}. We're here to assist you with that. To make the necessary changes, please provide us with the specific details of what you would like to modify in your order. Whether it's adding or removing items, updating the shipping address, or any other modifications, we'll ensure your order reflects your preferences accurately. Your satisfaction is our top priority, and we appreciate your trust in our services.",
+    "prediction": "Thank you for reaching out! I understand that you would like assistance with modifying your purchase of order number #{{Order Number}}. To help you, please provide me with the specific details about the changes you'd like to make to your order. This will allow us to ensure that we address your concerns accurately and efficiently.",
+    "rouge_l": 0.3941605839416058,
+    "len_ratio": 0.7051282051282052
+  },
+  {
+    "intent": "delivery_period",
+    "question": "need to check how soon can i ezpect my package",
+    "reference": "We completely understand your curiosity and eagerness to know when your package will arrive. To provide you with an accurate estimate, could you please provide us with the {{Tracking Number}} or {{Order Number}}? With that information, we can check the status of your package and give you a precise delivery date. Your patience is greatly appreciated, and we are here to assist you throughout the process.",
+    "prediction": "We understand your eagerness to know when you can expect your package. To provide you with an accurate estimate, could you please share the {{Tracking Number}} or {{Order Number}}? With that information, we'll be able to give you a precise delivery timeline. Thank you for your cooperation!",
+    "rouge_l": 0.6140350877192983,
+    "len_ratio": 0.7121212121212122
+  },
+  {
+    "intent": "get_refund",
+    "question": "when will I obtain a rebate of money?",
+    "reference": "I can relate to the understanding that you are eager to know when you will receive a rebate for your money. Our team is dedicated to resolving refund requests as quickly as possible. To provide you with a more accurate timeline, could you please provide me with the details of your refund? This includes the order number, purchase date, and any other relevant information. Once I have this information, I will be able to track the status of your refund and provide you with an estimated timeframe. Rest assured, I'm here to assist you every step of the way and ensure your refund is processed as efficiently as possible.",
+    "prediction": "I've understood you're curious about the estimated timeline for obtaining your rebate, and I'm here to provide you with accurate information. To assist you further, could you please share some details regarding the nature of the rebate or any specific order number associated with it? This will help me provide you with more precise guidance on when you can expect to receive your refund. Rest assured that we value your satisfaction and will do our best to ensure a smooth process for you.",
+    "rouge_l": 0.2755102040816326,
+    "len_ratio": 0.7614678899082569
+  },
+  {
+    "intent": "delete_account",
+    "question": "i have to delete the fucking freemium account i need help",
+    "reference": "Thanks for dropping us a line about deleting your freemium account. I understand that you're frustrated, and I apologize for any inconvenience you've experienced. Rest assured, I'm here to assist you with the process. Can you please provide me with some additional details or specific questions you have? By understanding your needs, I can ensure that we address all your concerns and guide you through this smoothly.",
+    "prediction": "I'm sorry to hear that you're seeking assistance with deleting your {{Account Type}} account. I understand how important it is for you, and I'll do my best to assist you in this matter.\n\nTo proceed with the deletion of your {{Account Type}} account, please follow these steps:\n\n1. Log into Your Account: Access our platform by signing in to your existing {{Account Type}} account.\n2. Navigate to Account Settings: Once logged in, locate the '{{Settings}}' or '{{Profile}}' section within your account dashboard.\n3. Locate Account Deletion Options: Look for an option labeled '{{Delete Account}}', '{{Cancel Account}}', or something similar related to closing or canceling your account.\n4. Follow the Prompts: Click on the deletion option and carefully read any prompts or instructions provided during the process.\n5. Confirm Removal: Make sure to confirm the deletion of your {{Account Type}} account by providing necessary information as prompted.\n6. Review Finalization: After confirming the removal, review the finalization details to ensure everything is accurate and completed successfully.\n\nIf you encounter any difficulties or if there's anything specific you'd like further clarification on, please don't hesitate to let me know. I'm here to provide guidance throughout this process and ensure",
+    "rouge_l": 0.1532846715328467,
+    "len_ratio": 2.9402985074626864
+  },
+  {
+    "intent": "change_shipping_address",
+    "question": "I am looking for information about an address update",
+    "reference": "Sure, I can provide you with information about updating your address. To modify your shipping address, you can go to your account settings and look for the \"Manage Addresses\" section. From there, you should be able to edit or add a new address. If you encounter any difficulties or need further assistance, feel free to let me know.",
+    "prediction": "How fascinating it is to embark on this journey of exploring the possibilities and nuances involved in updating your address!I'm thrilled to be here to assist you every step of the way. To ensure we provide you with accurate guidance, could you please share more details about the specific changes you would like to make? By sharing these details, we can tailor our response to meet your needs precisely. Let's work together to achieve the desired outcome!",
+    "rouge_l": 0.15942028985507245,
+    "len_ratio": 1.3275862068965518
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "do uhavea toll-free number to speak to customer assistance",
+    "reference": "Grateful for your contact! I get the sense that you are looking for a toll-free number to speak with our customer assistance team. We value your need for convenient communication. To ensure the best possible support, our toll-free number is {{Toll-Free Number}}. You can reach our customer assistance team at your convenience to discuss any questions or concerns you may have. We look forward to assisting you!",
+    "prediction": "We value your outreach! I'm in tune with the fact that you would like to know if we have a toll-free number for speaking to our customer assistance team. Yes, we do offer a toll-free number for customers to contact our dedicated team. You can reach us at {{Customer Support Phone Number}} during our operating hours. We're here to assist you with any questions or concerns you may have. How else may I be of service to you today?",
+    "rouge_l": 0.41830065359477125,
+    "len_ratio": 1.1791044776119404
+  },
+  {
+    "intent": "set_up_shipping_address",
+    "question": "want assistgance to submit the secondary shipping address",
+    "reference": "I've been informed that you're seeking assistance in submitting your secondary shipping address, and I'm here to guide you through the process. To submit your secondary shipping address, please follow these steps:\n\n1. Log in to your account.\n2. Navigate to the 'My Account' or 'Profile' section.\n3. Look for the 'Shipping Addresses' or a similar option.\n4. There should be an option to 'Add a New Address' or 'Edit Shipping Addresses'. Click on it.\n5. Enter the details of your secondary shipping address in the provided fields.\n6. Double-check the accuracy of the information and click on the 'Submit' button to save the changes.\n\nIf you encounter any issues during the process or if the steps differ in any way, please provide more details about the specific problem you're facing, and I'll be more than happy to assist you in resolving it.",
+    "prediction": "I'm happy to help! I understand that you need assistance in submitting your secondary shipping address. To do so, please follow these steps:\n\n1. Log in to your account on our website.\n2. Navigate to the 'My Account' or 'Profile' section.\n3. Look for the 'Shipping Addresses' or similar option.\n4. Select the option to 'Add New Address' or 'Edit Shipping Addresses'.\n5. Enter the details of your secondary shipping address in the provided fields.\n6. Double-check the accuracy of the entered information.\n7. Save the changes.\n\nIf you encounter any issues during this process or if there is anything specific you'd like further guidance on, please don't hesitate to let me know. I'm here to help ensure a smooth submission of your secondary shipping address.",
+    "rouge_l": 0.6142857142857143,
+    "len_ratio": 0.8811188811188811
+  },
+  {
+    "intent": "delivery_period",
+    "question": "help to see how long it takes for my item to arrive",
+    "reference": "We understand your need to track the progress and estimated arrival time of your item. To provide you with the most accurate information, could you please share the {{Tracking Number}} or {{Order Number}}? This will enable us to provide you with a precise estimate. Your satisfaction is our priority and we appreciate your cooperation in helping us assist you better.",
+    "prediction": "We understand your eagerness to know the estimated delivery time of your item. To provide you with accurate information, could you please provide us with the {{Order Number}} or {{Tracking Number}}? With this information, we will be able to track the progress and arrival date of your item more precisely. Your patience is greatly appreciated as we work towards resolving your query promptly.",
+    "rouge_l": 0.5040650406504066,
+    "len_ratio": 1.05
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "where do I see what hours customer assistance available is?",
+    "reference": "We're all ears! I'm tuned into the idea that you're looking for information on the operating hours of our customer assistance team. To find the hours when our team is available, you can visit our website and navigate to the \"Contact Us\" or \"Support\" page. There, you will find the specific hours during which you can reach out to our customer assistance team for any queries or concerns. If you need any further assistance or have any other questions, please feel free to let me know.",
+    "prediction": "Thank you for your message! I can tell that you would like to know where you can find information about the operating hours of our customer assistance team. To access this information, you can visit our website at {{Website URL}} and navigate to the \"Contact Us\" or \"Support\" page. There, you will find all the details regarding our customer assistance availability, including the specific hours during which you can reach out for assistance. If you have any further questions or need additional help, please feel free to let me know.",
+    "rouge_l": 0.5921787709497207,
+    "len_ratio": 1.0465116279069768
+  },
+  {
+    "intent": "recover_password",
+    "question": "I want help to recover my user profile access key",
+    "reference": "Thank you for reaching out! I completely understand that you are in need of assistance to recover your user profile access key. Keeping your profile secure is of utmost importance to us, and I'm here to guide you through the process:\n\n1. To begin, please visit the \"{{Account Recovery Page URL}}\" on our platform.\n2. On the account recovery page, you will find the option to initiate the recovery process for your user profile access key.\n3. Follow the prompts and provide any necessary information to verify your identity.\n4. Once your identity is verified, a step-by-step guide will be provided to help you recover your user profile access key.\n5. If you encounter any difficulties during the recovery process, or if you have any additional questions, don't hesitate to get in touch. Our dedicated support team is ready to assist you every step of the way.\n\nRemember, we're committed to ensuring the security and accessibility of your user profile, and we're here to support you in any way we can.",
+    "prediction": "Unquestionably! I'm here to guide you through the process of recovering your user profile access key:\n\n1. Begin by visiting our platform's \"{{Login Page URL}}\".\n2. Look for the option that says \"{{Forgot Access Key}}\" and click on it.\n3. You will be prompted to enter the email address associated with your user profile. Please provide the correct email address.\n4. In a few moments, we'll send an email to {{Email Address}} containing instructions on how to retrieve your user profile access key.\n5. If you don't see the email in your inbox or if it gets filtered into spam, please check your spam folder as well. Don't forget to move any important emails like this one to your primary inbox!\n6. Follow the steps outlined in the email carefully to successfully reset your user profile access key.\n\nIf you encounter any difficulties during the process or have any further questions, feel free to reach out to me. I'm always here to assist you!\"",
+    "rouge_l": 0.3054755043227666,
+    "len_ratio": 0.9590643274853801
+  }
+]

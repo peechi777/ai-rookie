@@ -1,0 +1,97 @@
+"""Lab 5：混合式 Graph RAG（語料為多檔 corpus + 擴充後的 Neo4j）。"""
+import os, re
+from pathlib import Path
+
+from langchain_openai import ChatOpenAI
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import Chroma
+from neo4j import GraphDatabase
+
+os.environ["OPENAI_API_KEY"] = "EMPTY"
+os.environ["OPENAI_API_BASE"] = "http://localhost:18299/v1"
+LLM_MODEL = "Qwen2.5-3B-Instruct"
+llm = ChatOpenAI(model=LLM_MODEL, temperature=0.2)
+
+LAB5 = Path(__file__).resolve().parent
+emb = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+)
+vectordb = Chroma(
+    persist_directory=str(LAB5 / "chroma_store"),
+    embedding_function=emb,
+)
+
+driver = GraphDatabase.driver("bolt://localhost:17687", auth=("neo4j", "password123"))
+
+
+def candidate_entities(question: str, k: int = 6):
+    # 1. 先從「問題本身」抓取實體 (例如問題裡的 SmartBatteryPack)
+    ents_from_q = re.findall(r'[A-Z][A-Za-z]+', question)
+    
+    # 2. 再從向量檢索的文本抓取
+    docs = vectordb.similarity_search(question, k=k)
+    full_text = " ".join([d.page_content for d in docs])
+    ents_from_docs = re.findall(r'[A-Z][A-Za-z]+', full_text)
+    
+    # 合併兩者
+    all_found = ents_from_q + ents_from_docs
+    
+    # 去重並回傳
+    unique_ents = []
+    for e in all_found:
+        if e not in unique_ents:
+            unique_ents.append(e)
+    return unique_ents[:8]
+
+
+def graph_expand(ents, hop=2):
+    if not ents:
+        return []
+    
+
+    cypher = """
+    MATCH (n)-[r]-(m) 
+    WHERE n.name IN $ents 
+       OR m.name IN $ents 
+       OR r.item IN $ents
+    RETURN n.name AS h, type(r) AS rel, m.name AS t, r.item AS item
+    LIMIT 120
+    """
+    
+    triples = []
+    with driver.session() as session:
+        result = session.run(cypher, ents=ents)
+        for record in result:
+            h, rel, t, item = record['h'], record['rel'], record['t'], record['item']
+            if item:
+                triples.append(f"({h})-[:{rel}]->({item})-[:to]->({t})")
+            else:
+                triples.append(f"({h})-[:{rel}]->({t})")
+            
+    return triples
+
+
+def answer_with_graph(question: str):
+    ents = candidate_entities(question)
+    triples = graph_expand(ents)
+    context = "\n".join(triples) if triples else "（圖譜中找不到相關關係）"
+    prompt = f"""
+你是一位企業知識專家，只能根據下列圖譜關係回答問題，若資訊不足請回答「無足夠資訊」。
+圖譜：
+{context}
+
+問題：{question}
+答案（繁體中文）：
+"""
+    return llm.invoke(prompt).content.strip(), triples, ents
+
+
+if __name__ == "__main__":
+    while True:
+        q = input("提問 (Enter 離開)：")
+        if not q:
+            break
+        ans, triples, ents = answer_with_graph(q)
+        print("候選實體：", ents)
+        print("Evidence triples:", triples)
+        print("Answer:", ans, "\n")

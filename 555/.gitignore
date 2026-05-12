@@ -1,0 +1,6 @@
+llama.cpp/
+open-webui-data/
+*.bin
+*.gguf
+*.sqlite3
+*.db

@@ -1,0 +1,42 @@
+[
+  {
+    "intent": "check_cancellation_fee",
+    "question": "i want help checking the early exit penalty"
+  },
+  {
+    "intent": "get_invoice",
+    "question": "i do not know what i need to do to download the bill #37777"
+  },
+  {
+    "intent": "change_shipping_address",
+    "question": "can you tell me about a delivery address update?"
+  },
+  {
+    "intent": "switch_account",
+    "question": "I don't know what to do to change to the freemium account"
+  },
+  {
+    "intent": "delete_account",
+    "question": "find information about the cancellation of a {{Account Category}} account"
+  },
+  {
+    "intent": "recover_password",
+    "question": "where do I reset my user key?"
+  },
+  {
+    "intent": "newsletter_subscription",
+    "question": "can I sign up to the corporate newsletter?"
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "do uhavea toll-free number to speak to customer assistance"
+  },
+  {
+    "intent": "contact_customer_service",
+    "question": "I want help tocall customer assistance"
+  },
+  {
+    "intent": "check_refund_policy",
+    "question": "I have got to see how long refunds take, I need help"
+  }
+]
